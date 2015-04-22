@@ -1,0 +1,359 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11293,        349]
+NotebookOptionsPosition[      8720,        273]
+NotebookOutlinePosition[     10364,        315]
+CellTagsIndexPosition[     10321,        312]
+WindowTitle->ErrorLogLinearPlot - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["ERRORPLOT PACKAGE PACLET SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"Tutorials \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Plotting data with error bars\"\>":>
+       Documentation`HelpLookup[
+       "paclet:ErrorPlot/tutorial/Plotting data with error bars"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"See Also \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"ErrorPlot\"\>":>Documentation`HelpLookup[
+       "paclet:ErrorPlot/ref/ErrorPlot"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"More About \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"ErrorPlot package\"\>":>
+       Documentation`HelpLookup["paclet:ErrorPlot/guide/ErrorPlot package"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"URL \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"ErrorPlot/ref/ErrorLogLinearPlot\"\>":>
+       None, "\<\"Copy Mathematica url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["ErrorPlot/ref/ErrorLogLinearPlot"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/mathematica/ErrorPlot/ref/\
+ErrorLogLinearPlot.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+            "http://reference.wolfram.com/mathematica/", 
+             "ErrorPlot/ref/ErrorLogLinearPlot", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell["ErrorLogLinearPlot", "ObjectName",
+ CellID->1224892054],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ErrorLogLinearPlot", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["pt", "TI"], 
+          StyleBox["1", "TR"]], ",", " ", 
+         SubscriptBox[
+          StyleBox["pt", "TI"], 
+          StyleBox["2", "TR"]], ",", "  ", 
+         StyleBox["\[Ellipsis]", "TR"]}], "}"}], "]"}]], "InlineFormula",
+      ShowStringCharacters->False],
+     "\[LineSeparator]makes a log-linear plot of the data of a List of \
+points, optionally including error bars. Each point is a List of numerical \
+values whose meaning is the defined by option ",
+     Cell[BoxData[
+      ButtonBox["DataFormat",
+       BaseStyle->"Link",
+       ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "InlineFormula"],
+     ". "
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ErrorLogLinearPlot", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["list", "TI"], 
+          StyleBox["1", "TR"]], ",", " ", 
+         SubscriptBox[
+          StyleBox["list", "TI"], 
+          StyleBox["2", "TR"]], ",", " ", 
+         StyleBox["\[Ellipsis]", "TR"]}], "}"}], "]"}]], "InlineFormula",
+      ShowStringCharacters->False],
+     "\[LineSeparator]plots several data series"
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->152440378],
+
+Cell[TextData[{
+ "To use ",
+ StyleBox["ErrorLogLinearPlot", "InlineCode"],
+ ", you first need to load the ",
+ ButtonBox["ErrorPlot Package",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"],
+ " using ",
+ StyleBox["Needs[\"ErrorPlot`\"]", "InlineCode"],
+ "."
+}], "Notes",
+ CellID->529477546],
+
+Cell[TextData[{
+ StyleBox["ErrorLogLinearPlot", "InlineCode"],
+ " is a log-linear plot equivalent of ",
+ Cell[BoxData[
+  ButtonBox["ErrorPlot",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "InlineFormula"],
+ ", refer to its page for documentation."
+}], "Notes",
+ CellID->13171136]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["SEE ALSO",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[Cell[BoxData[
+ StyleBox[
+  ButtonBox["ErrorPlot",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"],
+  FontFamily->"Verdana"]], "InlineFormula"]], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["TUTORIALS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[{
+ ButtonBox["Plotting data with error bars",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/tutorial/Plotting data with error bars"],
+ "."
+}], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["MORE ABOUT",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "MoreAboutSection",
+ CellID->38303248],
+
+Cell[TextData[ButtonBox["ErrorPlot package",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "MoreAbout",
+ CellID->66249873]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 709},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ErrorLogLinearPlot - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2015, 4, 22, 18, 57, 36.5872187}", "context" -> "ErrorPlot`", 
+    "keywords" -> {}, "index" -> True, "label" -> 
+    "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
+    "ErrorPlot Package", "status" -> "None", "summary" -> 
+    "ErrorLogLinearPlot[{pt_1, pt_2, ...}] makes a log-linear plot of the \
+data of a List of points, optionally including error bars. Each point is a \
+List of numerical values whose meaning is the defined by option DataFormat. \
+ErrorLogLinearPlot[{list_1, list_2, ...}] plots several data series", 
+    "synonyms" -> {}, "title" -> "ErrorLogLinearPlot", "type" -> "Symbol", 
+    "uri" -> "ErrorPlot/ref/ErrorLogLinearPlot"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+   StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[612, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[691, 24, 184, 5, 70, "LinkTrail"],
+Cell[878, 31, 3048, 70, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[3929, 103, 61, 1, 70, "ObjectName",
+ CellID->1224892054],
+Cell[CellGroupData[{
+Cell[4015, 108, 1474, 42, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[5514, 154, 580, 17, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->152440378],
+Cell[6097, 173, 320, 11, 70, "Notes",
+ CellID->529477546],
+Cell[6420, 186, 308, 9, 70, "Notes",
+ CellID->13171136]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6777, 201, 417, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[7197, 215, 212, 6, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7446, 226, 419, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[7868, 240, 196, 6, 70, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8101, 251, 419, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[8523, 265, 155, 3, 70, "MoreAbout",
+ CellID->66249873]
+}, Open  ]],
+Cell[8693, 271, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

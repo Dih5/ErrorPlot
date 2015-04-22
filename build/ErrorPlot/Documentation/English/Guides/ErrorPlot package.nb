@@ -1,0 +1,159 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4522,        149]
+NotebookOptionsPosition[      2695,         98]
+NotebookOutlinePosition[      4033,        131]
+CellTagsIndexPosition[      3990,        128]
+WindowTitle->ErrorPlot package - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "GuideColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ StyleBox[ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:guide/Mathematica"],
+  FontSlant->"Italic"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[CellGroupData[{
+
+Cell["ErrorPlot package", "GuideTitle",
+ CellID->942062912],
+
+Cell[TextData[{
+ "Built-in functions ",
+ ButtonBox["ListPlot",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/ListPlot"],
+ ", ",
+ ButtonBox["ListLogPlot",
+  BaseStyle->"NewInVersionLink",
+  ButtonData->"paclet:ref/ListLogPlot"],
+ ", ",
+ ButtonBox["ListLogLinearPlota",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/ref/ListLogLinearPlota"],
+ " and ",
+ ButtonBox["ListLogLogPlot",
+  BaseStyle->"NewInVersionLink",
+  ButtonData->"paclet:ref/ListLogLogPlot"],
+ " plot points using different scales for its axes. Functions ",
+ Cell[TextData[ButtonBox["ErrorPlot",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "InlineFunctionSans"],
+ ", ",
+ Cell[TextData[ButtonBox["ErrorLogPlot",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/ref/ErrorLogPlot"]], "InlineFunctionSans"],
+ ", ",
+ Cell[TextData[ButtonBox["ErrorLogLinearPlot",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/ref/ErrorLogLinearPlot"]], 
+  "InlineFunctionSans"],
+ " and ErrorLogLogPlot extend their functionality to plot error bars with \
+great flexibility on the format of provided data."
+}], "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["TUTORIALS", "GuideTutorialsSection",
+ CellID->415694126],
+
+Cell[TextData[ButtonBox["Plotting data with error bars",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars"]], "GuideTutorial",
+ CellID->12798403]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["RELATED LINKS", "GuideRelatedLinksSection",
+ CellID->415694148],
+
+Cell[TextData[ButtonBox["ListPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ref/ListPlot"]], "GuideRelatedLinks",
+ CellID->402223419]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 709},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ErrorPlot package - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2015, 4, 22, 18, 57, 30.4301496}", "context" -> "ErrorPlot`", 
+    "keywords" -> {}, "index" -> True, "label" -> "Error Plot Guide", 
+    "language" -> "en", "paclet" -> "ErrorPlot", "status" -> "None", 
+    "summary" -> 
+    "Built-in functions ListPlot, ListLogPlot, ListLogLinearPlota and \
+ListLogLogPlot plot points using different scales for its axes. Functions \
+ErrorPlot, ErrorLogPlot, ErrorLogLinearPlot and ErrorLogLogPlot extend their \
+functionality to plot error bars with great flexibility on the format of \
+provided data.", "synonyms" -> {}, "title" -> "ErrorPlot package", "type" -> 
+    "Guide", "uri" -> "ErrorPlot/guide/Plotting data with error bars"}, 
+  "LinkTrails" -> "", "SearchTextTranslated" -> ""},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[611, 21, 75, 1, 70, "GuideColorBar"],
+Cell[689, 24, 209, 6, 70, "LinkTrail"],
+Cell[CellGroupData[{
+Cell[923, 34, 59, 1, 70, "GuideTitle",
+ CellID->942062912],
+Cell[985, 37, 1134, 33, 70, "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2156, 75, 62, 1, 70, "GuideTutorialsSection",
+ CellID->415694126],
+Cell[2221, 78, 189, 4, 70, "GuideTutorial",
+ CellID->12798403]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2447, 87, 69, 1, 70, "GuideRelatedLinksSection",
+ CellID->415694148],
+Cell[2519, 90, 134, 3, 70, "GuideRelatedLinks",
+ CellID->402223419]
+}, Open  ]],
+Cell[2668, 96, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,784 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     22330,        775]
+NotebookOptionsPosition[     15240,        574]
+NotebookOutlinePosition[     15866,        598]
+CellTagsIndexPosition[     15787,        593]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["ErrorPlot Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->18752241],
+
+Cell["ErrorPlot`", "Categorization",
+ CellLabel->"Context",
+ CellID->366787101],
+
+Cell["ErrorPlot/ref/ErrorLogLinearPlot", "Categorization",
+ CellLabel->"URI",
+ CellID->102185953]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ErrorLogLinearPlot", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ErrorLogLinearPlot", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox[
+      StyleBox["pt", "TI"], 
+      StyleBox["1", "TR"]], ",", " ", 
+     SubscriptBox[
+      StyleBox["pt", "TI"], 
+      StyleBox["2", "TR"]], ",", "  ", 
+     StyleBox["\[Ellipsis]", "TR"]}], "}"}], "]"}]], "InlineFormula",
+  ShowStringCharacters->False],
+ "\[LineSeparator]makes a log-linear plot of the data of a List of points, \
+optionally including error bars. Each point is a List of numerical values \
+whose meaning is the defined by option ",
+ Cell[BoxData[
+  ButtonBox["DataFormat",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "InlineFormula"],
+ ". \n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ErrorLogLinearPlot", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox[
+      StyleBox["list", "TI"], 
+      StyleBox["1", "TR"]], ",", " ", 
+     SubscriptBox[
+      StyleBox["list", "TI"], 
+      StyleBox["2", "TR"]], ",", " ", 
+     StyleBox["\[Ellipsis]", "TR"]}], "}"}], "]"}]], "InlineFormula",
+  ShowStringCharacters->False],
+ "\[LineSeparator]plots several data series"
+}], "Usage",
+ CellChangeTimes->{{3.620389611227631*^9, 3.6203896113166904`*^9}}],
+
+Cell[TextData[{
+ "To use ",
+ StyleBox["ErrorLogLinearPlot", "InlineCode"],
+ ", you first need to load the ",
+ ButtonBox["ErrorPlot Package",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"],
+ " using ",
+ StyleBox["Needs[\"ErrorPlot`\"]", "InlineCode"],
+ "."
+}], "Notes",
+ CellChangeTimes->{{3.620371268993384*^9, 3.620371311503766*^9}, {
+  3.620371441121296*^9, 3.620371441170328*^9}, {3.620389658789387*^9, 
+  3.6203896591596346`*^9}, {3.620390295719603*^9, 3.6203902968113265`*^9}},
+ CellID->529477546],
+
+Cell[TextData[{
+ StyleBox["ErrorLogLinearPlot", "InlineCode"],
+ " is a log-linear plot equivalent of ",
+ Cell[BoxData[
+  ButtonBox["ErrorPlot",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "InlineFormula"],
+ ", refer to its page for documentation."
+}], "Notes",
+ CellChangeTimes->{{3.6203901838939466`*^9, 3.6203902191945105`*^9}, {
+  3.6203903005168037`*^9, 3.620390305002798*^9}},
+ CellID->13171136]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[{
+ ButtonBox["Plotting data with error bars",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/tutorial/Plotting data with error bars"],
+ "."
+}], "Tutorials",
+ CellChangeTimes->{3.620390321259654*^9},
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox["ErrorPlot",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "InlineFormula"]], "SeeAlso",
+ CellChangeTimes->{3.6203903161042123`*^9},
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["AlignmentPoint", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["AspectRatio", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Axes", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["AxesLabel", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["AxesOrigin", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["AxesStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Background", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["BaselinePosition", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["BaseStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ClippingStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ColorFunction", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ColorFunctionScaling", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ColorOutput", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ContentSelectable", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["CoordinatesToolOptions", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["DataRange", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["DisplayFunction", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Epilog", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Filling", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FillingStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FormatType", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Frame", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FrameLabel", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FrameStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FrameTicks", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["FrameTicksStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["GridLines", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["GridLinesStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ImageMargins", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ImagePadding", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ImageSize", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ImageSizeRaw", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["InterpolationOrder", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Joined", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["LabelStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["MaxPlotPoints", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Mesh", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["MeshFunctions", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["MeshShading", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["MeshStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Method", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PerformanceGoal", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotLabel", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotLegends", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotMarkers", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotRange", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotRangeClipping", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotRangePadding", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotRegion", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PreserveImageOptions", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Prolog", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["RotateLabel", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["TargetUnits", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Ticks", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["TicksStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PointMarkers", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ErrorBarTickSize", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ErrorBarTickStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["VerticalBarStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["HorizontalBarStyle", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PlotErrorBars", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["DataFormat", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 729},
+WindowMargins->{{Automatic, -73}, {Automatic, -8}},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[6476, 275, 100, 2, 53, "ExtendedExamplesSection",
+   CellTags->"ExtendedExamples",
+   CellID->1854448968]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 15649, 586}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 324, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[906, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[977, 41, 79, 2, 31, "Categorization",
+ CellID->686433507],
+Cell[1059, 45, 89, 2, 31, "Categorization",
+ CellID->18752241],
+Cell[1151, 49, 79, 2, 31, "Categorization",
+ CellID->366787101],
+Cell[1233, 53, 97, 2, 31, "Categorization",
+ CellID->102185953]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1367, 60, 55, 1, 17, "KeywordsSection",
+ CellID->477174294],
+Cell[1425, 63, 45, 1, 70, "Keywords",
+ CellID->1164421360]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1507, 69, 65, 1, 17, "TemplatesSection",
+ CellID->1872225408],
+Cell[1575, 72, 94, 2, 70, "Template",
+ CellID->1562036412],
+Cell[1672, 76, 82, 2, 70, "Template",
+ CellID->158391909],
+Cell[1757, 80, 81, 2, 70, "Template",
+ CellID->1360575930],
+Cell[1841, 84, 82, 2, 70, "Template",
+ CellID->793782254]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1960, 91, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[2016, 94, 63, 2, 70, "Details",
+ CellID->670882175],
+Cell[2082, 98, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[2154, 102, 64, 2, 70, "Details",
+ CellID->8391405],
+Cell[2221, 106, 69, 2, 70, "Details",
+ CellID->3610269],
+Cell[2293, 110, 61, 2, 70, "Details",
+ CellID->401364205],
+Cell[2357, 114, 61, 2, 70, "Details",
+ CellID->350204745],
+Cell[2421, 118, 63, 2, 70, "Details",
+ CellID->732958810],
+Cell[2487, 122, 78, 2, 70, "Details",
+ CellID->222905350],
+Cell[2568, 126, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2672, 133, 61, 1, 62, "ObjectName",
+ CellID->1224892054],
+Cell[2736, 136, 1251, 37, 123, "Usage"],
+Cell[3990, 175, 534, 14, 41, "Notes",
+ CellID->529477546],
+Cell[4527, 191, 429, 11, 25, "Notes",
+ CellID->13171136]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4993, 207, 57, 1, 43, "TutorialsSection",
+ CellID->250839057],
+Cell[5053, 210, 238, 7, 16, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5328, 222, 83, 1, 30, "RelatedDemonstrationsSection",
+ CellID->1268215905],
+Cell[5414, 225, 58, 1, 16, "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5509, 231, 65, 1, 30, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[5577, 234, 49, 1, 16, "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5663, 240, 55, 1, 30, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[5721, 243, 216, 5, 19, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5974, 253, 57, 1, 30, "MoreAboutSection",
+ CellID->38303248],
+Cell[6034, 256, 46, 1, 16, "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+Cell[6095, 260, 356, 11, 68, "PrimaryExamplesSection",
+ CellID->880084151],
+Cell[CellGroupData[{
+Cell[6476, 275, 100, 2, 53, "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+Cell[6579, 279, 125, 3, 30, "ExampleSection",
+ CellID->1293636265],
+Cell[6707, 284, 148, 3, 18, "ExampleSection",
+ CellID->1020263627],
+Cell[CellGroupData[{
+Cell[6880, 291, 106, 2, 18, "ExampleSection"],
+Cell[6989, 295, 119, 2, 70, "ExampleSubsection"],
+Cell[7111, 299, 116, 2, 70, "ExampleSubsection"],
+Cell[7230, 303, 109, 2, 70, "ExampleSubsection"],
+Cell[7342, 307, 114, 2, 70, "ExampleSubsection"],
+Cell[7459, 311, 115, 2, 70, "ExampleSubsection"],
+Cell[7577, 315, 114, 2, 70, "ExampleSubsection"],
+Cell[7694, 319, 115, 2, 70, "ExampleSubsection"],
+Cell[7812, 323, 121, 2, 70, "ExampleSubsection"],
+Cell[7936, 327, 114, 2, 70, "ExampleSubsection"],
+Cell[8053, 331, 118, 2, 70, "ExampleSubsection"],
+Cell[8174, 335, 118, 2, 70, "ExampleSubsection"],
+Cell[8295, 339, 125, 2, 70, "ExampleSubsection"],
+Cell[8423, 343, 116, 2, 70, "ExampleSubsection"],
+Cell[8542, 347, 122, 2, 70, "ExampleSubsection"],
+Cell[8667, 351, 127, 2, 70, "ExampleSubsection"],
+Cell[8797, 355, 114, 2, 70, "ExampleSubsection"],
+Cell[8914, 359, 120, 2, 70, "ExampleSubsection"],
+Cell[9037, 363, 111, 2, 70, "ExampleSubsection"],
+Cell[9151, 367, 112, 2, 70, "ExampleSubsection"],
+Cell[9266, 371, 117, 2, 70, "ExampleSubsection"],
+Cell[9386, 375, 115, 2, 70, "ExampleSubsection"],
+Cell[9504, 379, 110, 2, 70, "ExampleSubsection"],
+Cell[9617, 383, 115, 2, 70, "ExampleSubsection"],
+Cell[9735, 387, 115, 2, 70, "ExampleSubsection"],
+Cell[9853, 391, 115, 2, 70, "ExampleSubsection"],
+Cell[9971, 395, 120, 2, 70, "ExampleSubsection"],
+Cell[10094, 399, 114, 2, 70, "ExampleSubsection"],
+Cell[10211, 403, 119, 2, 70, "ExampleSubsection"],
+Cell[10333, 407, 117, 2, 70, "ExampleSubsection"],
+Cell[10453, 411, 117, 2, 70, "ExampleSubsection"],
+Cell[10573, 415, 114, 2, 70, "ExampleSubsection"],
+Cell[10690, 419, 117, 2, 70, "ExampleSubsection"],
+Cell[10810, 423, 123, 2, 70, "ExampleSubsection"],
+Cell[10936, 427, 111, 2, 70, "ExampleSubsection"],
+Cell[11050, 431, 115, 2, 70, "ExampleSubsection"],
+Cell[11168, 435, 118, 2, 70, "ExampleSubsection"],
+Cell[11289, 439, 109, 2, 70, "ExampleSubsection"],
+Cell[11401, 443, 118, 2, 70, "ExampleSubsection"],
+Cell[11522, 447, 116, 2, 70, "ExampleSubsection"],
+Cell[11641, 451, 114, 2, 70, "ExampleSubsection"],
+Cell[11758, 455, 111, 2, 70, "ExampleSubsection"],
+Cell[11872, 459, 120, 2, 70, "ExampleSubsection"],
+Cell[11995, 463, 114, 2, 70, "ExampleSubsection"],
+Cell[12112, 467, 116, 2, 70, "ExampleSubsection"],
+Cell[12231, 471, 116, 2, 70, "ExampleSubsection"],
+Cell[12350, 475, 114, 2, 70, "ExampleSubsection"],
+Cell[12467, 479, 122, 2, 70, "ExampleSubsection"],
+Cell[12592, 483, 121, 2, 70, "ExampleSubsection"],
+Cell[12716, 487, 115, 2, 70, "ExampleSubsection"],
+Cell[12834, 491, 114, 2, 70, "ExampleSubsection"],
+Cell[12951, 495, 125, 2, 70, "ExampleSubsection"],
+Cell[13079, 499, 111, 2, 70, "ExampleSubsection"],
+Cell[13193, 503, 116, 2, 70, "ExampleSubsection"],
+Cell[13312, 507, 116, 2, 70, "ExampleSubsection"],
+Cell[13431, 511, 110, 2, 70, "ExampleSubsection"],
+Cell[13544, 515, 115, 2, 70, "ExampleSubsection"],
+Cell[13662, 519, 117, 2, 70, "ExampleSubsection"],
+Cell[13782, 523, 121, 2, 70, "ExampleSubsection"],
+Cell[13906, 527, 122, 2, 70, "ExampleSubsection"],
+Cell[14031, 531, 121, 2, 70, "ExampleSubsection"],
+Cell[14155, 535, 123, 2, 70, "ExampleSubsection"],
+Cell[14281, 539, 118, 2, 70, "ExampleSubsection"],
+Cell[14402, 543, 115, 2, 70, "ExampleSubsection"]
+}, Closed]],
+Cell[14532, 548, 131, 3, 18, "ExampleSection",
+ CellID->258228157],
+Cell[14666, 553, 142, 3, 18, "ExampleSection",
+ CellID->2123667759],
+Cell[14811, 558, 135, 3, 18, "ExampleSection",
+ CellID->1305812373],
+Cell[14949, 563, 140, 3, 18, "ExampleSection",
+ CellID->1653164318],
+Cell[15092, 568, 132, 3, 18, "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

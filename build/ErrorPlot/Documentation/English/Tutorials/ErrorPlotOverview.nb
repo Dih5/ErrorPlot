@@ -1,0 +1,250 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8078,        240]
+NotebookOptionsPosition[      5423,        165]
+NotebookOutlinePosition[      7128,        212]
+CellTagsIndexPosition[      7085,        209]
+WindowTitle->ErrorPlot Overview - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["ERROR PLOT PACKAGE OVERVIEW", "PacletNameCell"], Cell[TextData[Cell[
+    BoxData[
+     ActionMenuBox[
+      FrameBox["\<\"URL \[RightGuillemet]\"\>",
+       StripOnInput->False], {"\<\"ErrorPlot/tutorial/ErrorPlotOverview\"\>":>
+      None, "\<\"Copy Mathematica url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["ErrorPlot/tutorial/ErrorPlotOverview"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/mathematica/ErrorPlot/tutorial/\
+ErrorPlotOverview.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+           "http://reference.wolfram.com/mathematica/", 
+            "ErrorPlot/tutorial/ErrorPlotOverview", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell["ErrorPlot Overview", "TOCDocumentTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["Plotting data with error bars",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#509267359"]], \
+"TOCChapter"],
+
+Cell[TextData[ButtonBox["Advanced manipulation of markers",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#249727140"]], \
+"TOCSection"],
+
+Cell[TextData[ButtonBox["Choosing the data's format",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#439374960"]], \
+"TOCSection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["ReferencePages/Symbols",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "TOCChapter"],
+
+Cell[TextData[ButtonBox["DataFormat",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorBarTickSize",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorBarTickSize"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorBarTickStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorBarTickStyle"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogLinearPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogLinearPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogLogPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogLogPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["HorizontalBarStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/HorizontalBarStyle"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["PlotErrorBars",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/PlotErrorBars"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["PointMarkers",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/PointMarkers"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["VerticalBarStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/VerticalBarStyle"]], "TOCSection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["Guides",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "TOCChapter"],
+
+Cell[TextData[ButtonBox["ErrorPlot package",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "TOCSection"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 709},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ErrorPlot Overview - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2015, 4, 22, 18, 57, 47.5218213}", "context" -> "ErrorPlot`", 
+    "keywords" -> {}, "index" -> True, "label" -> 
+    "Error Plot Package Overview", "language" -> "en", "paclet" -> 
+    "ErrorPlot Package", "status" -> "None", "summary" -> 
+    "Plotting data with error bars ReferencePages/Symbols Guides", 
+    "synonyms" -> {}, "title" -> "ErrorPlot Overview", "type" -> "Overview", 
+    "uri" -> "ErrorPlot/tutorial/ErrorPlotOverview"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["TutorialMoreAboutSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["RelatedTutorialsSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}], 
+   Cell[
+    StyleData["TutorialRelatedLinksSection"], 
+    CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+   StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[612, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[691, 24, 184, 5, 70, "LinkTrail"],
+Cell[878, 31, 1923, 42, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[2826, 77, 46, 0, 70, "TOCDocumentTitle"],
+Cell[CellGroupData[{
+Cell[2897, 81, 179, 4, 70, "TOCChapter"],
+Cell[3079, 87, 182, 4, 70, "TOCSection"],
+Cell[3264, 93, 176, 4, 70, "TOCSection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3477, 102, 133, 2, 70, "TOCChapter"],
+Cell[3613, 106, 121, 2, 70, "TOCSection"],
+Cell[3737, 110, 133, 2, 70, "TOCSection"],
+Cell[3873, 114, 135, 2, 70, "TOCSection"],
+Cell[4011, 118, 137, 2, 70, "TOCSection"],
+Cell[4151, 122, 131, 2, 70, "TOCSection"],
+Cell[4285, 126, 125, 2, 70, "TOCSection"],
+Cell[4413, 130, 119, 2, 70, "TOCSection"],
+Cell[4535, 134, 137, 2, 70, "TOCSection"],
+Cell[4675, 138, 127, 2, 70, "TOCSection"],
+Cell[4805, 142, 125, 2, 70, "TOCSection"],
+Cell[4933, 146, 133, 2, 70, "TOCSection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5103, 153, 126, 2, 70, "TOCChapter"],
+Cell[5232, 157, 137, 2, 70, "TOCSection"]
+}, Open  ]]
+}, Open  ]],
+Cell[5396, 163, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,767 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26996,        757]
+NotebookOptionsPosition[     23569,        646]
+NotebookOutlinePosition[     25185,        692]
+CellTagsIndexPosition[     25100,        687]
+WindowTitle->DataFormat - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["ERRORPLOT PACKAGE PACLET SYMBOL", "PacletNameCell"], Cell[TextData[
+    Cell[BoxData[
+     ActionMenuBox[
+      FrameBox["\<\"URL \[RightGuillemet]\"\>",
+       StripOnInput->False], {"\<\"ErrorPlot/ref/DataFormat\"\>":>
+      None, "\<\"Copy Mathematica url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["ErrorPlot/ref/DataFormat"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/mathematica/ErrorPlot/ref/\
+DataFormat.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+           "http://reference.wolfram.com/mathematica/", 
+            "ErrorPlot/ref/DataFormat", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["DataFormat", "ObjectName",
+ CellID->1224892054],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData["DataFormat"], "InlineFormula"],
+     "\[LineSeparator]is an option for error-plotting that specifies the \
+meaning of each data point coordinate."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->53321130],
+
+Cell[TextData[{
+ "DataFormat must be a ",
+ ButtonBox["List",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/List"],
+ " of ",
+ ButtonBox["String",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/String"],
+ "s, each one defining the meaning of each data point coordinate in ",
+ Cell[BoxData[
+  ButtonBox["ErrorPlot",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "InlineFormula"],
+ " and similar functions."
+}], "Notes",
+ CellID->1067943069],
+
+Cell["The following substrings can be used to define each String:", "Notes",
+ CellID->16590170],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "\"\<x\>\"", Cell[
+    "The coordinate is an abscissa", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<y\>\"", Cell[
+    "The coordinate is an ordinate", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<d\>\"", Cell["\<\
+The coordinate is a difference between the point and the end of the error bar\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<rel\>\"", Cell["\<\
+The coordinate is a relative difference between the point and the end of the \
+error bar\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<max\>\"", Cell[
+    "The coordinate refers to the higher end of the error bar", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<min\>\"", Cell[
+    "The coordinate refers to the lower end of the error bar", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
+   "Rows" -> {None, None, None, None, None, {None}}, "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True, True, True, True}}}},
+ CellID->234732565],
+
+Cell["\<\
+The order and capitalization of those substrings are irrelevant.\
+\>", "Notes",
+ CellID->165248366],
+
+Cell["\<\
+If no option is given, the default setting will be chosen on the dimesion of \
+the data points:\
+\>", "Notes",
+ CellID->232576562],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], Cell["2", "TableText"], Cell[
+    "{\"x\",\"y\"}", "TableText"]},
+   {Cell["      ", "TableRowIcon"], Cell["3", "TableText"], Cell[
+    "{\"x\",\"y\",\"dy\"}", "TableText"]},
+   {Cell["      ", "TableRowIcon"], Cell["4", "TableText"], Cell[
+    "{\"xmin\",\"xmax\",\"y\",\"dy\"}", "TableText"]},
+   {Cell["      ", "TableRowIcon"], Cell["5", "TableText"], Cell[
+    "{\"xmin\",\"xmax\",\"y\",\"dy\",\"\"}", "TableText"]},
+   {Cell["      ", "TableRowIcon"], Cell["6 or more", "TableText"], Cell[
+    "{\"x\", \"y\", \"xmin\", \"xmax\", \"ymin\", \"ymax\"}", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
+   "Rows" -> {None, None, None, None, {None}}, "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True, True, True}}}},
+ CellID->138769078]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["EXAMPLES",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->647399537],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection",
+ CellID->626321198],
+
+Cell["\<\
+We load the package and prepare some data (see the tutorial for more \
+information) and test different options for DataFormat:\
+\>", "ExampleText",
+ CellID->25537377],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<ErrorPlot`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"x", "+", "1"}], ",", 
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         RowBox[{"t", "^", "2"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "x", ",", 
+           RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], ",", 
+       RowBox[{"2", "*", 
+        RowBox[{"Sqrt", "[", 
+         RowBox[{
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{"t", "^", "4"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"t", ",", "x", ",", 
+              RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], "-", 
+          RowBox[{
+           RowBox[{"Integrate", "[", 
+            RowBox[{
+             RowBox[{"t", "^", "2"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"t", ",", "x", ",", 
+               RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], "^", "2"}]}], 
+         "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "1", ",", "20", ",", "5"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fullData", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"i", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", 
+       RowBox[{"i", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"i", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "+", 
+          RowBox[{"i", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ")"}], "/", "2"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"i", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "-", 
+          RowBox[{"i", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ")"}], "/", "2"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"i", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "-", 
+          RowBox[{"i", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"i", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "+", 
+          RowBox[{"i", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], ",", 
+       RowBox[{"i", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], ",", 
+       RowBox[{"i", "[", 
+        RowBox[{"[", "4", "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "data"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TableForm", "[", 
+  RowBox[{"fullData", ",", 
+   RowBox[{"TableHeadings", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<\!\(\*SubscriptBox[\(x\), \(min\)]\)\>\"", ",", 
+        "\"\<\!\(\*SubscriptBox[\(x\), \(max\)]\)\>\"", ",", "\"\<x\>\"", 
+        ",", "\"\<dx\>\"", ",", "\"\<relx\>\"", ",", "\"\<y\>\"", ",", 
+        "\"\<\[Delta]y\>\""}], "}"}]}], "}"}]}]}], "]"}]}], "Input",
+ CellLabel->"In[1]:=",
+ CellID->319398630],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["\<\"\\!\\(\\*SubscriptBox[\\(x\\), \\(min\\)]\\)\"\>",
+       HoldForm], 
+      TagBox["\<\"\\!\\(\\*SubscriptBox[\\(x\\), \\(max\\)]\\)\"\>",
+       HoldForm], 
+      TagBox["\<\"x\"\>",
+       HoldForm], 
+      TagBox["\<\"dx\"\>",
+       HoldForm], 
+      TagBox["\<\"relx\"\>",
+       HoldForm], 
+      TagBox["\<\"y\"\>",
+       HoldForm], 
+      TagBox["\<\"\[Delta]y\"\>",
+       HoldForm]},
+     {"1", "2", 
+      FractionBox["3", "2"], 
+      FractionBox["1", "2"], 
+      FractionBox["1", "3"], 
+      FractionBox["7", "3"], 
+      FractionBox[
+       RowBox[{"2", " ", 
+        SqrtBox[
+         FractionBox["34", "5"]]}], "3"]},
+     {"6", "7", 
+      FractionBox["13", "2"], 
+      FractionBox["1", "2"], 
+      FractionBox["1", "13"], 
+      FractionBox["127", "3"], 
+      FractionBox[
+       RowBox[{"2", " ", 
+        SqrtBox[
+         FractionBox["634", "5"]]}], "3"]},
+     {"11", "12", 
+      FractionBox["23", "2"], 
+      FractionBox["1", "2"], 
+      FractionBox["1", "23"], 
+      FractionBox["397", "3"], 
+      FractionBox[
+       RowBox[{"16", " ", 
+        SqrtBox[
+         FractionBox["31", "5"]]}], "3"]},
+     {"16", "17", 
+      FractionBox["33", "2"], 
+      FractionBox["1", "2"], 
+      FractionBox["1", "33"], 
+      FractionBox["817", "3"], 
+      FractionBox[
+       RowBox[{"4", " ", 
+        SqrtBox[
+         FractionBox["1021", "5"]]}], "3"]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "ColumnsIndexed" -> {}, 
+      "Rows" -> {False, True, {False}, False}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[
+   BoxForm`e$, 
+    TableHeadings -> {
+     None, {"\!\(\*SubscriptBox[\(x\), \(min\)]\)", 
+       "\!\(\*SubscriptBox[\(x\), \(max\)]\)", "x", "dx", "relx", "y", 
+       "\[Delta]y"}}]]]], "Output",
+ ImageSize->{326, 189},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]//TableForm=",
+ CellID->9395508]
+}, Open  ]],
+
+Cell["X-coordinates as an interval", "ExampleText",
+ CellID->52246935],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ErrorPlot", "[", 
+  RowBox[{
+   RowBox[{"fullData", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "2", ",", "6", ",", "7"}], "}"}]}], "]"}], "]"}], 
+   ",", 
+   RowBox[{"DataFormat", "->", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<xMin\>\"", ",", "\"\<xMax\>\"", ",", "\"\<y\>\"", ",", 
+      "\"\<dy\>\""}], "}"}]}], ",", 
+   RowBox[{"PlotErrorBars", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->566671650],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt3e9LHEccx/HQ9kH/jf4hqW3aPok2NrapNKSUJPUwLVFIDCX6JEchgZK2
+QR9UQ9QoahqaFon0UkEhjUWUBA9KW0J+ECLI9UGOFMUHQuA63nrj7K6eZ9zd
+m/n6frGGdW65nXAfh5m93Zk3jrU2pF7Zs2fP6dfVPw1Hv3r71KmjZz98Tf2y
+72xb07FX1U63+vlP/azuF3YmlUrt8B0Ae5BnSEKeEbfs3EJgy+UWYzoXeUas
+Hj541toy5m2HP7nm7XR1Tsd0ulRRTG8OmGr29sR9CsKMxJBnSEKeIUkyeSbS
+SAbtMxzV0T7+8MEz/evszHx/371AntUB6rBoz0ueEYfWlrHs3IK3r8Kskuxt
+kxOP9DHqAHVYtOclz4iDmef0uQmd5zNtGX0MeYYrWk7erNs/oGO82fbWm5fz
++eUIz8t4EHEw2+eVlRfDQ1lVogK8tLSij6F9hiu+vTj19OnzQGFgPKgOUIdF
+e17yjMRwvQ6S8H0KJKksz7lMOrUmnckVi7K9qUBRqaR0RAlhRmIqyrNKam/W
+v6sS7s+tesEr0Dsl5BmJ2W5/Q+W4mOdsbzq91mYH822kv4g8I1bZuYXwZeeK
+LtPpqK72LdZC6yW8lPNCwdwtIs9IjL4ivfWR6xEOvqBa5vLts7bT6gIRWB0P
++jJazLB+bfUl+s9whHEpY/36hS7U4eX6BnYD8gxJ6DlDEsIMScgzJCHPkIQ8
+QxK+TIEkJBmSkGdIQp4hCZ1nSEKYIQl5hiTkGZKQZ1imzPPd63c7l7n/mSEh
+LBJ+vjv8NArPp8BB+unXwNOCPN8N9xizbwSe5ub5brjFfL57u+0z/WfYZIPn
+u+k/w1Fln++u6PpG4lUG4kKeIQl5hiSMByEJSYYk5BmSkGdIQp4hCYNBSEKY
+IQl5hiTkGZLwfQokIcmQhDxDEvIMScgzrOR7kGpb69ETadhlLaw6z6xHD3fl
+Mhn/M9ysRw/nGXlmPXo4LxjUNaxHDyf52mfWoxfm77/+zc4tmJsqqXalYuVr
+n1mPXpKlpZUzbZnWljG1HTn845dfjKodVaLKq10165Bnt6gkq8a52rWwF3l2
+C3kuj5GgtVRup+48CRSG89zTPbuy8iK5atmNMFurv++e2syS2Zn5xo9H+q7c
+NQsbD43kcovJVs1e5NlagTyrMNfs7fG2yYlHupw8m8iztVSYU5//4l3WUFv9
+gUGd57raAV3+3ju9Yzf/qXZlbUH/2Voqz5e+/0NfcL703ZTO88VvftflB+sH
+Hz/OV7uytiDM1hoeypr9DTXoUyW1+69+nZ40rzyr/kY+v1yNCtqIPFtLBTj8
+jUn4+gZhNpFnt3D9uTzy7AR9/8bxYzd+uv7nLrh/4yUxHrSfef9GXe1A0/Gf
+uX9jM4TZLWS4PPIMScgzJKH/DCttOF8B6w/CQYH5ClgfFg4Lzlew3fW7k64v
+sDVfngOzEzBfAVzz8u0zQ0LYxz+fDP1nuG3D+Qq4voHdhTxDEjrPkIQwQxLy
+DEnIMyQhz5CE8SAkIcyQhDxDEvIMSeg/QxLCDEnIMyQhz5CEPMN+rEcPQViP
+HpKwHj0EYT16SFXxevTVqV6COtrH9fojegsv8AfrsB59ST6/fKJ51CyZnZnv
+aP+t5eSYWdjVOU2wbcZ69J5cbrHx0Ij+tbSEX3fN3svmEn4Xzt++lblfjQoi
+Yrsqz+lzEzrPZ9oyupw8iyE+z+/XXg13m8Pb6VO/VruyiIDswWCgffaW8Pv0
+yPWjn90wF26gfRZDcJgLxdVGOtrHvX2VbW+JqJ4fZlRnw9tXCS8UV2JlETQZ
+ZOfZ1NU57S0RpdrnhoND3r4aIVa7XojS7smztuG6q5BBdv8Zuw1hhiTkGZKQ
+Z0hCniEJ40FIQpghCXmGJOQZktB/hiSVhLm1Zcz8gnh2Zr6/7555P7ySnVvo
+6pyOvn7AdlSS58ZDI7ncYqF4u9q14ay+Z7jvyl0VY++lW5n7F87fjr26QFnb
+yvPUnSf1BwZ1nutqB1TTrdrqQpXybGdPqZJaVVjzCP+Ddr5V5Cqp20cNQ5U8
+4vHuvq6ozhjhxy3+rZI/Y/JvteWb7FBTU/PBD9I7fx/AFEm2tzzmRPNoPr9c
+/hjVFWE8iKqL5I8CsAR5BgBEJTy7tSN8kwduNmOVrTasvEP1t1ZodmsnrCWg
+FInNZxS0UaDyjn4ElgrObu2CXCaTNScrLjPjq32ClXfzI7BVaHZrd/jyvNmM
+3LYy6unwR2A3Y2ZgFzjaPns2Sa5jH4F9wrNbO8PfxDnUf17lq7yzH4GNwrNb
+O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
+    "], {{0, 152}, {240, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  BaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{240, 152},
+  PlotRange->{{0, 240}, {0, 152}}]], "Output",
+ ImageSize->{244, 152},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->176480858]
+}, Open  ]],
+
+Cell["X-coordinates as a ball", "ExampleText",
+ CellID->180196045],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ErrorPlot", "[", 
+  RowBox[{
+   RowBox[{"fullData", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "4", ",", "6", ",", "7"}], "}"}]}], "]"}], "]"}], 
+   ",", 
+   RowBox[{"DataFormat", "->", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<x\>\"", ",", "\"\<dx\>\"", ",", "\"\<y\>\"", ",", "\"\<dy\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"PlotErrorBars", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->181432386],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt3e9LHEccx/HQ9kH/jf4hqW3aPok2NrapNKSUJPUwLVFIDCX6JEchgZK2
+QR9UQ9QoahqaFon0UkEhjUWUBA9KW0J+ECLI9UGOFMUHQuA63nrj7K6eZ9zd
+m/n6frGGdW65nXAfh5m93Zk3jrU2pF7Zs2fP6dfVPw1Hv3r71KmjZz98Tf2y
+72xb07FX1U63+vlP/azuF3YmlUrt8B0Ae5BnSEKeEbfs3EJgy+UWYzoXeUas
+Hj541toy5m2HP7nm7XR1Tsd0ulRRTG8OmGr29sR9CsKMxJBnSEKeIUkyeSbS
+SAbtMxzV0T7+8MEz/evszHx/371AntUB6rBoz0ueEYfWlrHs3IK3r8Kskuxt
+kxOP9DHqAHVYtOclz4iDmef0uQmd5zNtGX0MeYYrWk7erNs/oGO82fbWm5fz
++eUIz8t4EHEw2+eVlRfDQ1lVogK8tLSij6F9hiu+vTj19OnzQGFgPKgOUIdF
+e17yjMRwvQ6S8H0KJKksz7lMOrUmnckVi7K9qUBRqaR0RAlhRmIqyrNKam/W
+v6sS7s+tesEr0Dsl5BmJ2W5/Q+W4mOdsbzq91mYH822kv4g8I1bZuYXwZeeK
+LtPpqK72LdZC6yW8lPNCwdwtIs9IjL4ivfWR6xEOvqBa5vLts7bT6gIRWB0P
++jJazLB+bfUl+s9whHEpY/36hS7U4eX6BnYD8gxJ6DlDEsIMScgzJCHPkIQ8
+QxK+TIEkJBmSkGdIQp4hCZ1nSEKYIQl5hiTkGZKQZ1imzPPd63c7l7n/mSEh
+LBJ+vjv8NArPp8BB+unXwNOCPN8N9xizbwSe5ub5brjFfL57u+0z/WfYZIPn
+u+k/w1Fln++u6PpG4lUG4kKeIQl5hiSMByEJSYYk5BmSkGdIQp4hCYNBSEKY
+IQl5hiTkGZLwfQokIcmQhDxDEvIMScgzrOR7kGpb69ETadhlLaw6z6xHD3fl
+Mhn/M9ysRw/nGXlmPXo4LxjUNaxHDyf52mfWoxfm77/+zc4tmJsqqXalYuVr
+n1mPXpKlpZUzbZnWljG1HTn845dfjKodVaLKq10165Bnt6gkq8a52rWwF3l2
+C3kuj5GgtVRup+48CRSG89zTPbuy8iK5atmNMFurv++e2syS2Zn5xo9H+q7c
+NQsbD43kcovJVs1e5NlagTyrMNfs7fG2yYlHupw8m8iztVSYU5//4l3WUFv9
+gUGd57raAV3+3ju9Yzf/qXZlbUH/2Voqz5e+/0NfcL703ZTO88VvftflB+sH
+Hz/OV7uytiDM1hoeypr9DTXoUyW1+69+nZ40rzyr/kY+v1yNCtqIPFtLBTj8
+jUn4+gZhNpFnt3D9uTzy7AR9/8bxYzd+uv7nLrh/4yUxHrSfef9GXe1A0/Gf
+uX9jM4TZLWS4PPIMScgzJKH/DCttOF8B6w/CQYH5ClgfFg4Lzlew3fW7k64v
+sDVfngOzEzBfAVzz8u0zQ0LYxz+fDP1nuG3D+Qq4voHdhTxDEjrPkIQwQxLy
+DEnIMyQhz5CE8SAkIcyQhDxDEvIMSeg/QxLCDEnIMyQhz5CEPMN+rEcPQViP
+HpKwHj0EYT16SFXxevTVqV6COtrH9fojegsv8AfrsB59ST6/fKJ51CyZnZnv
+aP+t5eSYWdjVOU2wbcZ69J5cbrHx0Ij+tbSEX3fN3svmEn4Xzt++lblfjQoi
+Yrsqz+lzEzrPZ9oyupw8iyE+z+/XXg13m8Pb6VO/VruyiIDswWCgffaW8Pv0
+yPWjn90wF26gfRZDcJgLxdVGOtrHvX2VbW+JqJ4fZlRnw9tXCS8UV2JlETQZ
+ZOfZ1NU57S0RpdrnhoND3r4aIVa7XojS7smztuG6q5BBdv8Zuw1hhiTkGZKQ
+Z0hCniEJ40FIQpghCXmGJOQZktB/hiSVhLm1Zcz8gnh2Zr6/7555P7ySnVvo
+6pyOvn7AdlSS58ZDI7ncYqF4u9q14ay+Z7jvyl0VY++lW5n7F87fjr26QFnb
+yvPUnSf1BwZ1nutqB1TTrdrqQpXybGdPqZJaVVjzCP+Ddr5V5Cqp20cNQ5U8
+4vHuvq6ozhjhxy3+rZI/Y/JvteWb7FBTU/PBD9I7fx/AFEm2tzzmRPNoPr9c
+/hjVFWE8iKqL5I8CsAR5BgBEJTy7tSN8kwduNmOVrTasvEP1t1ZodmsnrCWg
+FInNZxS0UaDyjn4ElgrObu2CXCaTNScrLjPjq32ClXfzI7BVaHZrd/jyvNmM
+3LYy6unwR2A3Y2ZgFzjaPns2Sa5jH4F9wrNbO8PfxDnUf17lq7yzH4GNwrNb
+O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
+    "], {{0, 152}, {240, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  BaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{240, 152},
+  PlotRange->{{0, 240}, {0, 152}}]], "Output",
+ ImageSize->{244, 152},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->304461605]
+}, Open  ]],
+
+Cell["X-coordinates as a ball of relative radious", "ExampleText",
+ CellID->280718715],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ErrorPlot", "[", 
+  RowBox[{
+   RowBox[{"fullData", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "5", ",", "6", ",", "7"}], "}"}]}], "]"}], "]"}], 
+   ",", 
+   RowBox[{"DataFormat", "->", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<x\>\"", ",", "\"\<relx\>\"", ",", "\"\<y\>\"", ",", "\"\<dy\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"PlotErrorBars", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->509461540],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt3e9LHEccx/HQ9kH/jf4hqW3aPok2NrapNKSUJPUwLVFIDCX6JEchgZK2
+QR9UQ9QoahqaFon0UkEhjUWUBA9KW0J+ECLI9UGOFMUHQuA63nrj7K6eZ9zd
+m/n6frGGdW65nXAfh5m93Zk3jrU2pF7Zs2fP6dfVPw1Hv3r71KmjZz98Tf2y
+72xb07FX1U63+vlP/azuF3YmlUrt8B0Ae5BnSEKeEbfs3EJgy+UWYzoXeUas
+Hj541toy5m2HP7nm7XR1Tsd0ulRRTG8OmGr29sR9CsKMxJBnSEKeIUkyeSbS
+SAbtMxzV0T7+8MEz/evszHx/371AntUB6rBoz0ueEYfWlrHs3IK3r8Kskuxt
+kxOP9DHqAHVYtOclz4iDmef0uQmd5zNtGX0MeYYrWk7erNs/oGO82fbWm5fz
++eUIz8t4EHEw2+eVlRfDQ1lVogK8tLSij6F9hiu+vTj19OnzQGFgPKgOUIdF
+e17yjMRwvQ6S8H0KJKksz7lMOrUmnckVi7K9qUBRqaR0RAlhRmIqyrNKam/W
+v6sS7s+tesEr0Dsl5BmJ2W5/Q+W4mOdsbzq91mYH822kv4g8I1bZuYXwZeeK
+LtPpqK72LdZC6yW8lPNCwdwtIs9IjL4ivfWR6xEOvqBa5vLts7bT6gIRWB0P
++jJazLB+bfUl+s9whHEpY/36hS7U4eX6BnYD8gxJ6DlDEsIMScgzJCHPkIQ8
+QxK+TIEkJBmSkGdIQp4hCZ1nSEKYIQl5hiTkGZKQZ1imzPPd63c7l7n/mSEh
+LBJ+vjv8NArPp8BB+unXwNOCPN8N9xizbwSe5ub5brjFfL57u+0z/WfYZIPn
+u+k/w1Fln++u6PpG4lUG4kKeIQl5hiSMByEJSYYk5BmSkGdIQp4hCYNBSEKY
+IQl5hiTkGZLwfQokIcmQhDxDEvIMScgzrOR7kGpb69ETadhlLaw6z6xHD3fl
+Mhn/M9ysRw/nGXlmPXo4LxjUNaxHDyf52mfWoxfm77/+zc4tmJsqqXalYuVr
+n1mPXpKlpZUzbZnWljG1HTn845dfjKodVaLKq10165Bnt6gkq8a52rWwF3l2
+C3kuj5GgtVRup+48CRSG89zTPbuy8iK5atmNMFurv++e2syS2Zn5xo9H+q7c
+NQsbD43kcovJVs1e5NlagTyrMNfs7fG2yYlHupw8m8iztVSYU5//4l3WUFv9
+gUGd57raAV3+3ju9Yzf/qXZlbUH/2Voqz5e+/0NfcL703ZTO88VvftflB+sH
+Hz/OV7uytiDM1hoeypr9DTXoUyW1+69+nZ40rzyr/kY+v1yNCtqIPFtLBTj8
+jUn4+gZhNpFnt3D9uTzy7AR9/8bxYzd+uv7nLrh/4yUxHrSfef9GXe1A0/Gf
+uX9jM4TZLWS4PPIMScgzJKH/DCttOF8B6w/CQYH5ClgfFg4Lzlew3fW7k64v
+sDVfngOzEzBfAVzz8u0zQ0LYxz+fDP1nuG3D+Qq4voHdhTxDEjrPkIQwQxLy
+DEnIMyQhz5CE8SAkIcyQhDxDEvIMSeg/QxLCDEnIMyQhz5CEPMN+rEcPQViP
+HpKwHj0EYT16SFXxevTVqV6COtrH9fojegsv8AfrsB59ST6/fKJ51CyZnZnv
+aP+t5eSYWdjVOU2wbcZ69J5cbrHx0Ij+tbSEX3fN3svmEn4Xzt++lblfjQoi
+Yrsqz+lzEzrPZ9oyupw8iyE+z+/XXg13m8Pb6VO/VruyiIDswWCgffaW8Pv0
+yPWjn90wF26gfRZDcJgLxdVGOtrHvX2VbW+JqJ4fZlRnw9tXCS8UV2JlETQZ
+ZOfZ1NU57S0RpdrnhoND3r4aIVa7XojS7smztuG6q5BBdv8Zuw1hhiTkGZKQ
+Z0hCniEJ40FIQpghCXmGJOQZktB/hiSVhLm1Zcz8gnh2Zr6/7555P7ySnVvo
+6pyOvn7AdlSS58ZDI7ncYqF4u9q14ay+Z7jvyl0VY++lW5n7F87fjr26QFnb
+yvPUnSf1BwZ1nutqB1TTrdrqQpXybGdPqZJaVVjzCP+Ddr5V5Cqp20cNQ5U8
+4vHuvq6ozhjhxy3+rZI/Y/JvteWb7FBTU/PBD9I7fx/AFEm2tzzmRPNoPr9c
+/hjVFWE8iKqL5I8CsAR5BgBEJTy7tSN8kwduNmOVrTasvEP1t1ZodmsnrCWg
+FInNZxS0UaDyjn4ElgrObu2CXCaTNScrLjPjq32ClXfzI7BVaHZrd/jyvNmM
+3LYy6unwR2A3Y2ZgFzjaPns2Sa5jH4F9wrNbO8PfxDnUf17lq7yzH4GNwrNb
+O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
+    "], {{0, 152}, {240, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  BaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{240, 152},
+  PlotRange->{{0, 240}, {0, 152}}]], "Output",
+ ImageSize->{244, 152},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->53183213]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 709},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"DataFormat - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2015, 4, 22, 18, 57, 32.0162041}", "context" -> "ErrorPlot`", 
+    "keywords" -> {}, "index" -> True, "label" -> 
+    "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
+    "ErrorPlot Package", "status" -> "None", "summary" -> 
+    "DataFormat is an option for error-plotting that specifies the meaning of \
+each data point coordinate.", "synonyms" -> {}, "title" -> "DataFormat", 
+    "type" -> "Symbol", "uri" -> "ErrorPlot/ref/DataFormat"}, "LinkTrails" -> 
+  "", "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+   StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6715, 192, 461, 13, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->647399537]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 24957, 680}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[604, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[683, 24, 184, 5, 70, "LinkTrail"],
+Cell[870, 31, 1879, 42, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[2752, 75, 53, 1, 70, "ObjectName",
+ CellID->1224892054],
+Cell[CellGroupData[{
+Cell[2830, 80, 374, 10, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[3229, 94, 579, 17, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->53321130],
+Cell[3811, 113, 465, 16, 70, "Notes",
+ CellID->1067943069],
+Cell[4279, 131, 95, 1, 70, "Notes",
+ CellID->16590170],
+Cell[4377, 134, 1124, 22, 70, "2ColumnTableMod",
+ CellID->234732565],
+Cell[5504, 158, 109, 3, 70, "Notes",
+ CellID->165248366],
+Cell[5616, 163, 140, 4, 70, "Notes",
+ CellID->232576562],
+Cell[5759, 169, 907, 17, 70, "2ColumnTableMod",
+ CellID->138769078]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6715, 192, 461, 13, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->647399537],
+Cell[CellGroupData[{
+Cell[7201, 209, 148, 5, 70, "ExampleSection",
+ CellID->626321198],
+Cell[7352, 216, 176, 4, 70, "ExampleText",
+ CellID->25537377],
+Cell[CellGroupData[{
+Cell[7553, 224, 3109, 93, 70, "Input",
+ CellID->319398630],
+Cell[10665, 319, 2436, 80, 224, "Output",
+ CellID->9395508]
+}, Open  ]],
+Cell[13116, 402, 70, 1, 70, "ExampleText",
+ CellID->52246935],
+Cell[CellGroupData[{
+Cell[13211, 407, 508, 16, 47, "Input",
+ CellID->566671650],
+Cell[13722, 425, 2846, 54, 173, "Output",
+ CellID->176480858]
+}, Open  ]],
+Cell[16583, 482, 66, 1, 70, "ExampleText",
+ CellID->180196045],
+Cell[CellGroupData[{
+Cell[16674, 487, 502, 16, 47, "Input",
+ CellID->181432386],
+Cell[17179, 505, 2846, 54, 173, "Output",
+ CellID->304461605]
+}, Open  ]],
+Cell[20040, 562, 86, 1, 70, "ExampleText",
+ CellID->280718715],
+Cell[CellGroupData[{
+Cell[20151, 567, 504, 16, 47, "Input",
+ CellID->509461540],
+Cell[20658, 585, 2845, 54, 173, "Output",
+ CellID->53183213]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[23542, 644, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

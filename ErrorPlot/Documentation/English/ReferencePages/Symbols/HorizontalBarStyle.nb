@@ -1,0 +1,806 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     26167,        797]
+NotebookOptionsPosition[     21849,        644]
+NotebookOutlinePosition[     22475,        668]
+CellTagsIndexPosition[     22396,        663]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["ErrorPlot Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->670065635],
+
+Cell["ErrorPlot`", "Categorization",
+ CellLabel->"Context",
+ CellID->497249016],
+
+Cell["ErrorPlot/ref/HorizontalBarStyle", "Categorization",
+ CellLabel->"URI",
+ CellID->546567945]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["HorizontalBarStyle", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData["HorizontalBarStyle"], "InlineFormula"],
+ "\[LineSeparator]is an option for error-plotting that specifies the style in \
+which horizontal error bars are plotted."
+}], "Usage"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"HorizontalBarStyle", " ", "->", " ", "g"}]], "InlineFormula"],
+ " specifies that a graphics directive ",
+ Cell[BoxData["g"], "InlineFormula"],
+ " should be used to draw horizontal error bars for all data series in ",
+ StyleBox["ErrorPlot", "InlineCode"],
+ "-like functions."
+}], "Notes",
+ CellChangeTimes->{{3.6203936210234585`*^9, 3.6203936747623377`*^9}, {
+  3.620393732174663*^9, 3.620393795430896*^9}, {3.6203939137899103`*^9, 
+  3.6203939196077967`*^9}},
+ CellID->1067943069],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"HorizontalBarStyle", " ", "->", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["g", "1"], ",", 
+     SubscriptBox["g", "2"], ",", "..."}], "}"}]}]], "InlineFormula",
+  FormatType->"StandardForm"],
+ " specifies that succesive directives ",
+ Cell[BoxData[
+  SubscriptBox["g", "i"]], "InlineFormula",
+  FormatType->"StandardForm"],
+ " should be used cyclically for succesive data series."
+}], "Notes",
+ CellChangeTimes->{{3.620393798066653*^9, 3.6203938966654773`*^9}},
+ CellID->480723944]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[{
+ ButtonBox["Plotting data with error bars",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ErrorPlot/tutorial/Plotting data with error bars"],
+ "."
+}], "Tutorials",
+ CellChangeTimes->{3.6203941444418926`*^9},
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox["VerticalBarStyle",
+  BaseStyle->"Link",
+  ButtonData->
+   "paclet:ErrorPlot/ref/VerticalBarStyle"]], "InlineFormula"]], "SeeAlso",
+ CellChangeTimes->{{3.620394153812148*^9, 3.620394160890874*^9}},
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<ErrorPlot`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->43218476],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"ErrorPlot", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"x", "+", "1"}], ",", 
+         RowBox[{"Integrate", "[", 
+          RowBox[{
+           RowBox[{"t", "^", "2"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", "x", ",", 
+             RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"2", "*", 
+          RowBox[{"Sqrt", "[", 
+           RowBox[{
+            RowBox[{"Integrate", "[", 
+             RowBox[{
+              RowBox[{"t", "^", "4"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"t", ",", "x", ",", 
+                RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], "-", 
+            RowBox[{
+             RowBox[{"Integrate", "[", 
+              RowBox[{
+               RowBox[{"t", "^", "2"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"t", ",", "x", ",", 
+                 RowBox[{"x", "+", "1"}]}], "}"}]}], "]"}], "^", "2"}]}], 
+           "]"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "20", ",", "5"}], "}"}]}], "]"}], ",", 
+     RowBox[{"PlotErrorBars", "\[Rule]", "True"}], ",", 
+     RowBox[{"HorizontalBarStyle", "\[Rule]", "s"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", 
+     RowBox[{"{", 
+      RowBox[{"Orange", ",", " ", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Thick", ",", " ", "Orange"}], "]"}], ",", "Transparent"}], 
+      "}"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->558775114],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{{}, GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGDQAGIQDQE/7FevAgEmBwhfygHM13KF8tUh/K4ECL/BwCEU
+BFgLHWD65xVsnNPkKQDXz7Pno+rE1x5w/YFTFvbMN06C64+vvsigb1YE159x
+4WS+A+dje5h+r5nJ+kcyHeH6uZrSJ2YfjoXrnxq3Kfj7inyo/Ac090uguV8N
+1f0M6O5ncEDVL4OmXwNNvyGG/0fDj7zwAwCfIq3+
+      "], {
+       {RGBColor[0.24720000000000014`, 0.24, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 21],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 22],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 23],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 
+         24]}, 
+       {RGBColor[0.6, 0.24, 0.4428931686004542], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 25], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 26], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 27], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 28]}, 
+       {RGBColor[0.6, 0.5470136627990908, 0.24], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 29], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 30], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 31], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 32]}, 
+       {RGBColor[0.24, 0.6, 0.33692049419863584`], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 33], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 34], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 35], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 36]}, 
+       {RGBColor[0.24, 0.3531726744018182, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 37], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 38], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 39], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 40]}, {}}], {}},
+    AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+    Axes->True,
+    AxesLabel->{None, None},
+    AxesOrigin->{0, 0},
+    Epilog->{{{
+        RGBColor[0.24720000000000014`, 0.24, 0.6], 
+        LineBox[{{{1.5, 4.07178730805404}, {1.5, 0.5948793586126273}}, {{6.5, 
+         49.840367072138264`}, {6.5, 34.82629959452841}}, {{11.5, 
+         145.61322623785466`}, {11.5, 119.05344042881202`}}, {{16.5, 
+         291.38647538975596`}, {16.5, 253.28019127691064`}}}]}}, {{
+        RGBColor[1, 0.5, 0], 
+        LineBox[{{{1., 2.3333333333333335`}, {2., 2.3333333333333335`}}, {{6.,
+          42.333333333333336`}, {7., 42.333333333333336`}}, {{11., 
+         132.33333333333334`}, {12., 132.33333333333334`}}, {{16., 
+         272.3333333333333}, {17., 272.3333333333333}}}]}}, {}},
+    Method->{},
+    PlotRange->{{0, 17.}, {0, 291.38647538975596`}},
+    PlotRangeClipping->True,
+    PlotRangePadding->{{0.34, 0.34}, {5.8277295077951194`, 
+     5.8277295077951194`}}], ",", 
+   GraphicsBox[{{}, GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGDQAGIQDQE/7FevAgEmBwhfygHM13KF8tUh/K4ECL/BwCEU
+BFgLHWD65xVsnNPkKQDXz7Pno+rE1x5w/YFTFvbMN06C64+vvsigb1YE159x
+4WS+A+dje5h+r5nJ+kcyHeH6uZrSJ2YfjoXrnxq3Kfj7inyo/Ac090uguV8N
+1f0M6O5ncEDVL4OmXwNNvyGG/0fDj7zwAwCfIq3+
+      "], {
+       {RGBColor[0.24720000000000014`, 0.24, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 21],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 22],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 23],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 
+         24]}, 
+       {RGBColor[0.6, 0.24, 0.4428931686004542], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 25], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 26], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 27], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 28]}, 
+       {RGBColor[0.6, 0.5470136627990908, 0.24], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 29], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 30], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 31], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 32]}, 
+       {RGBColor[0.24, 0.6, 0.33692049419863584`], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 33], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 34], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 35], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 36]}, 
+       {RGBColor[0.24, 0.3531726744018182, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 37], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 38], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 39], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 40]}, {}}], {}},
+    AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+    Axes->True,
+    AxesLabel->{None, None},
+    AxesOrigin->{0, 0},
+    Epilog->{{{
+        RGBColor[0.24720000000000014`, 0.24, 0.6], 
+        LineBox[{{{1.5, 4.07178730805404}, {1.5, 0.5948793586126273}}, {{6.5, 
+         49.840367072138264`}, {6.5, 34.82629959452841}}, {{11.5, 
+         145.61322623785466`}, {11.5, 119.05344042881202`}}, {{16.5, 
+         291.38647538975596`}, {16.5, 253.28019127691064`}}}]}}, {{
+        Directive[
+         Thickness[Large], 
+         RGBColor[1, 0.5, 0]], 
+        LineBox[{{{1., 2.3333333333333335`}, {2., 2.3333333333333335`}}, {{6.,
+          42.333333333333336`}, {7., 42.333333333333336`}}, {{11., 
+         132.33333333333334`}, {12., 132.33333333333334`}}, {{16., 
+         272.3333333333333}, {17., 272.3333333333333}}}]}}, {}},
+    Method->{},
+    PlotRange->{{0, 17.}, {0, 291.38647538975596`}},
+    PlotRangeClipping->True,
+    PlotRangePadding->{{0.34, 0.34}, {5.8277295077951194`, 
+     5.8277295077951194`}}], ",", 
+   GraphicsBox[{{}, GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGDQAGIQDQE/7FevAgEmBwhfygHM13KF8tUh/K4ECL/BwCEU
+BFgLHWD65xVsnNPkKQDXz7Pno+rE1x5w/YFTFvbMN06C64+vvsigb1YE159x
+4WS+A+dje5h+r5nJ+kcyHeH6uZrSJ2YfjoXrnxq3Kfj7inyo/Ac090uguV8N
+1f0M6O5ncEDVL4OmXwNNvyGG/0fDj7zwAwCfIq3+
+      "], {
+       {RGBColor[0.24720000000000014`, 0.24, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 21],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 22],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 23],
+         InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], PointBox[{0, 0}]}], 
+         24]}, 
+       {RGBColor[0.6, 0.24, 0.4428931686004542], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 25], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 26], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 27], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 28]}, 
+       {RGBColor[0.6, 0.5470136627990908, 0.24], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 29], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 30], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 31], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{-0.02, 0}, {0.04, 0}}]}], 32]}, 
+       {RGBColor[0.24, 0.6, 0.33692049419863584`], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 33], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 34], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 35], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 36]}, 
+       {RGBColor[0.24, 0.3531726744018182, 0.6], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 37], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 38], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 39], InsetBox[
+         GraphicsBox[
+          {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+           LineBox[{{0, -0.02}, {0, 0.04}}]}], 40]}, {}}], {}},
+    AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+    Axes->True,
+    AxesLabel->{None, None},
+    AxesOrigin->{0, 0},
+    Epilog->{{{
+        RGBColor[0.24720000000000014`, 0.24, 0.6], 
+        LineBox[{{{1.5, 4.07178730805404}, {1.5, 0.5948793586126273}}, {{6.5, 
+         49.840367072138264`}, {6.5, 34.82629959452841}}, {{11.5, 
+         145.61322623785466`}, {11.5, 119.05344042881202`}}, {{16.5, 
+         291.38647538975596`}, {16.5, 253.28019127691064`}}}]}}, {{
+        GrayLevel[0, 0], 
+        LineBox[{{{1., 2.3333333333333335`}, {2., 2.3333333333333335`}}, {{6.,
+          42.333333333333336`}, {7., 42.333333333333336`}}, {{11., 
+         132.33333333333334`}, {12., 132.33333333333334`}}, {{16., 
+         272.3333333333333}, {17., 272.3333333333333}}}]}}, {}},
+    Method->{},
+    PlotRange->{{0, 17.}, {0, 291.38647538975596`}},
+    PlotRangeClipping->True,
+    PlotRangePadding->{{0.34, 0.34}, {5.8277295077951194`, 
+     5.8277295077951194`}}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6203904653137302`*^9},
+ CellLabel->"Out[2]=",
+ CellID->3826919]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 729},
+WindowMargins->{{Automatic, 82}, {Automatic, -7}},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[20329, 586, 100, 2, 53, "ExtendedExamplesSection",
+   CellTags->"ExtendedExamples",
+   CellID->1854448968]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 22257, 656}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 324, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[906, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[977, 41, 79, 2, 31, "Categorization",
+ CellID->686433507],
+Cell[1059, 45, 90, 2, 31, "Categorization",
+ CellID->670065635],
+Cell[1152, 49, 79, 2, 31, "Categorization",
+ CellID->497249016],
+Cell[1234, 53, 97, 2, 31, "Categorization",
+ CellID->546567945]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1368, 60, 55, 1, 17, "KeywordsSection",
+ CellID->477174294],
+Cell[1426, 63, 45, 1, 70, "Keywords",
+ CellID->1164421360]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1508, 69, 65, 1, 17, "TemplatesSection",
+ CellID->1872225408],
+Cell[1576, 72, 94, 2, 70, "Template",
+ CellID->1562036412],
+Cell[1673, 76, 82, 2, 70, "Template",
+ CellID->158391909],
+Cell[1758, 80, 81, 2, 70, "Template",
+ CellID->1360575930],
+Cell[1842, 84, 82, 2, 70, "Template",
+ CellID->793782254]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1961, 91, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[2017, 94, 63, 2, 70, "Details",
+ CellID->670882175],
+Cell[2083, 98, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[2155, 102, 64, 2, 70, "Details",
+ CellID->8391405],
+Cell[2222, 106, 69, 2, 70, "Details",
+ CellID->3610269],
+Cell[2294, 110, 61, 2, 70, "Details",
+ CellID->401364205],
+Cell[2358, 114, 61, 2, 70, "Details",
+ CellID->350204745],
+Cell[2422, 118, 63, 2, 70, "Details",
+ CellID->732958810],
+Cell[2488, 122, 78, 2, 70, "Details",
+ CellID->222905350],
+Cell[2569, 126, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2673, 133, 61, 1, 62, "ObjectName",
+ CellID->1224892054],
+Cell[2737, 136, 230, 5, 71, "Usage"],
+Cell[2970, 143, 522, 12, 41, "Notes",
+ CellID->1067943069],
+Cell[3495, 157, 535, 15, 39, "Notes",
+ CellID->480723944]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4067, 177, 57, 1, 43, "TutorialsSection",
+ CellID->250839057],
+Cell[4127, 180, 240, 7, 16, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4404, 192, 83, 1, 30, "RelatedDemonstrationsSection",
+ CellID->1268215905],
+Cell[4490, 195, 58, 1, 16, "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4585, 201, 65, 1, 30, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[4653, 204, 49, 1, 16, "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4739, 210, 55, 1, 30, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[4797, 213, 256, 6, 19, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5090, 224, 57, 1, 30, "MoreAboutSection",
+ CellID->38303248],
+Cell[5150, 227, 46, 1, 16, "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5233, 233, 356, 11, 68, "PrimaryExamplesSection",
+ CellID->880084151],
+Cell[5592, 246, 117, 3, 27, "Input",
+ CellID->43218476],
+Cell[CellGroupData[{
+Cell[5734, 253, 1595, 45, 128, "Input",
+ CellID->558775114],
+Cell[7332, 300, 12948, 280, 273, "Output",
+ CellID->3826919]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20329, 586, 100, 2, 53, "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+Cell[20432, 590, 125, 3, 30, "ExampleSection",
+ CellID->1293636265],
+Cell[20560, 595, 148, 3, 18, "ExampleSection",
+ CellID->1020263627],
+Cell[CellGroupData[{
+Cell[20733, 602, 127, 3, 18, "ExampleSection",
+ CellID->2061341341],
+Cell[20863, 607, 130, 3, 70, "ExampleSubsection",
+ CellID->1757724783],
+Cell[20996, 612, 130, 3, 70, "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+Cell[21141, 618, 131, 3, 18, "ExampleSection",
+ CellID->258228157],
+Cell[21275, 623, 142, 3, 18, "ExampleSection",
+ CellID->2123667759],
+Cell[21420, 628, 135, 3, 18, "ExampleSection",
+ CellID->1305812373],
+Cell[21558, 633, 140, 3, 18, "ExampleSection",
+ CellID->1653164318],
+Cell[21701, 638, 132, 3, 18, "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

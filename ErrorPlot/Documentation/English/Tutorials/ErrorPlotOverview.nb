@@ -1,0 +1,301 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7463,        291]
+NotebookOptionsPosition[      4921,        205]
+NotebookOutlinePosition[      5345,        221]
+CellTagsIndexPosition[      5302,        218]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Overview", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["ErrorPlot Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["ErrorPlot`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["ErrorPlot/tutorial/ErrorPlotOverview", "Categorization",
+ CellLabel->"URI"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Synonyms", "SynonymsSection",
+ CellID->1427418553],
+
+Cell["XXXX", "Synonyms",
+ CellID->1251652828]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->218895918],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->795871300],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->199739161],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->40625308],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->357121918],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->35949532],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->929432370],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ErrorPlot Overview", "TOCDocumentTitle"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["Plotting data with error bars",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#509267359"]], \
+"TOCChapter"],
+
+Cell[TextData[ButtonBox["Advanced manipulation of markers",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#249727140"]], \
+"TOCSection"],
+
+Cell[TextData[ButtonBox["Choosing the data's format",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:ErrorPlot/tutorial/Plotting data with error bars#439374960"]], \
+"TOCSection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["ReferencePages/Symbols",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "TOCChapter"],
+
+Cell[TextData[ButtonBox["DataFormat",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/DataFormat"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorBarTickSize",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorBarTickSize"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorBarTickStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorBarTickStyle"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogLinearPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogLinearPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogLogPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogLogPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorLogPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorLogPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["ErrorPlot",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/ErrorPlot"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["HorizontalBarStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/HorizontalBarStyle"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["PlotErrorBars",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/PlotErrorBars"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["PointMarkers",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/PointMarkers"]], "TOCSection"],
+
+Cell[TextData[ButtonBox["VerticalBarStyle",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/ref/VerticalBarStyle"]], "TOCSection"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["Guides",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "TOCChapter"],
+
+Cell[TextData[ButtonBox["ErrorPlot package",
+ BaseStyle->"Link",
+ ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "TOCSection"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{700, 729},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 324, 14, 22, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[906, 38, 68, 1, 27, "CategorizationSection",
+ CellID->1122911449],
+Cell[977, 41, 81, 2, 31, "Categorization",
+ CellID->686433507],
+Cell[1061, 45, 90, 2, 31, "Categorization",
+ CellID->605800465],
+Cell[1154, 49, 79, 2, 31, "Categorization",
+ CellID->468444828],
+Cell[1236, 53, 81, 1, 31, "Categorization"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1354, 59, 56, 1, 27, "SynonymsSection",
+ CellID->1427418553],
+Cell[1413, 62, 45, 1, 70, "Synonyms",
+ CellID->1251652828]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1495, 68, 56, 1, 17, "KeywordsSection",
+ CellID->1427428552],
+Cell[1554, 71, 45, 1, 70, "Keywords",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1636, 77, 53, 1, 17, "DetailsSection",
+ CellID->307771771],
+Cell[1692, 80, 63, 2, 70, "Details",
+ CellID->218895918],
+Cell[1758, 84, 69, 2, 70, "Details",
+ CellID->350963985],
+Cell[1830, 88, 66, 2, 70, "Details",
+ CellID->795871300],
+Cell[1899, 92, 71, 2, 70, "Details",
+ CellID->199739161],
+Cell[1973, 96, 60, 2, 70, "Details",
+ CellID->40625308],
+Cell[2036, 100, 61, 2, 70, "Details",
+ CellID->357121918],
+Cell[2100, 104, 62, 2, 70, "Details",
+ CellID->35949532],
+Cell[2165, 108, 78, 2, 70, "Details",
+ CellID->929432370],
+Cell[2246, 112, 67, 2, 70, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2350, 119, 46, 0, 167, "TOCDocumentTitle"],
+Cell[CellGroupData[{
+Cell[2421, 123, 179, 4, 45, "TOCChapter"],
+Cell[2603, 129, 182, 4, 26, "TOCSection"],
+Cell[2788, 135, 176, 4, 20, "TOCSection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3001, 144, 133, 2, 45, "TOCChapter"],
+Cell[3137, 148, 121, 2, 26, "TOCSection"],
+Cell[3261, 152, 133, 2, 20, "TOCSection"],
+Cell[3397, 156, 135, 2, 20, "TOCSection"],
+Cell[3535, 160, 137, 2, 20, "TOCSection"],
+Cell[3675, 164, 131, 2, 20, "TOCSection"],
+Cell[3809, 168, 125, 2, 20, "TOCSection"],
+Cell[3937, 172, 119, 2, 20, "TOCSection"],
+Cell[4059, 176, 137, 2, 20, "TOCSection"],
+Cell[4199, 180, 127, 2, 20, "TOCSection"],
+Cell[4329, 184, 125, 2, 20, "TOCSection"],
+Cell[4457, 188, 133, 2, 70, "TOCSection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4627, 195, 126, 2, 70, "TOCChapter"],
+Cell[4756, 199, 137, 2, 70, "TOCSection"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
