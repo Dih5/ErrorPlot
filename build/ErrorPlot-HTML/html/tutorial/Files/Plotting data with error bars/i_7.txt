@@ -1,0 +1,22 @@
+<pre name='i_7_in' id='i_7_in' class='IFT'>data2 = Table[{x, x + 1, Integrate[t^2, {t, x, x + 1}], 
+    2*Sqrt[Integrate[t^4, {t, x, x + 1}] - 
+       Integrate[t^2, {t, x, x + 1}]^2]}, {x, 3, 20, 5}];</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0xurrd21twd6lha9pmpca74353yp7kt16s-j1e4z</String>
+  </Function>
+ </Function>
+</Expression>

@@ -1,0 +1,27 @@
+<pre name='i_17_in' id='i_17_in' class='IFT'>ErrorPlot[data, DataFormat -&gt; {&quot;xMin&quot;, &quot;MaxX&quot;, &quot;y&quot;, &quot;dy&quot;}, 
+ PointMarkers -&gt; Graphics[{Orange, PointSize[Large], Point[{0, 0}]}], 
+ PlotErrorBars -&gt; {True, True}, Filling -&gt; {4 -&gt; Axis, 5 -&gt; Axis}, 
+ FillingStyle -&gt; Directive[Thick, Red], 
+ HorizontalBarStyle -&gt; {Directive[Thick, Red]}, 
+ ErrorBarTickSize -&gt; {0, 0.03}, 
+ VerticalBarStyle -&gt; {Directive[Thick, Orange]}, 
+ ErrorBarTickStyle -&gt; Orange]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0xurrd21twd6lha9pmpca74353yp7kt16s-hjya8t</String>
+  </Function>
+ </Function>
+</Expression>

@@ -1,0 +1,22 @@
+<pre name='i_1_in' id='i_1_in' class='IFT'>Needs[&quot;ErrorPlot`&quot;]
+ErrorPlot[{{1, 2, 2, 0.5}, {2, 3, 3, 0.6}}, 
+ PlotRange -&gt; {{0, 3}, {1, 4}}, PlotErrorBars -&gt; True]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0n3cz275kem6mea-18up0</String>
+  </Function>
+ </Function>
+</Expression>

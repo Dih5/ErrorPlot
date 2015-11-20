@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11184,        349]
+NotebookDataLength[     11183,        349]
 NotebookOptionsPosition[      8647,        273]
-NotebookOutlinePosition[     10254,        315]
-CellTagsIndexPosition[     10211,        312]
+NotebookOutlinePosition[     10253,        315]
+CellTagsIndexPosition[     10210,        312]
 WindowTitle->ErrorLogPlot - Wolfram Mathematica
 WindowFrame->Normal*)
 
@@ -169,7 +169,7 @@ Cell[TextData[Cell[BoxData[
   Evaluator->None,
   Method->"Preemptive"]]]], "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->337091905],
+ CellID->345910543],
 
 Cell[TextData[{
  "To use ",
@@ -266,7 +266,7 @@ Cell[TextData[ButtonBox["MORE ABOUT",
 Cell[TextData[ButtonBox["ErrorPlot package",
  BaseStyle->"Link",
  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "MoreAbout",
- CellID->310220068]
+ CellID->395072627]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -279,8 +279,8 @@ WindowTitle->"ErrorLogPlot - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 39.0688172}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> 
+   "built" -> "{2015, 11, 20, 10, 56, 17.0812829}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> 
     "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
     "ErrorPlot Package", "status" -> "None", "summary" -> 
     "ErrorLogPlot[{pt_1, pt_2, ...}] makes a log plot of the data of a List \
@@ -291,7 +291,7 @@ ErrorLogPlot[{list_1, list_2, ...}] plots several data series",
     "ErrorPlot/ref/ErrorLogPlot"}, "LinkTrails" -> "", "SearchTextTranslated" -> 
   ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -300,8 +300,8 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -325,7 +325,7 @@ Cell[3979, 108, 1455, 42, 70, "Usage"],
 Cell[CellGroupData[{
 Cell[5459, 154, 580, 17, 70, "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->337091905],
+ CellID->345910543],
 Cell[6042, 173, 314, 11, 70, "Notes",
  CellID->529477546],
 Cell[6359, 186, 295, 9, 70, "Notes",
@@ -348,7 +348,7 @@ Cell[CellGroupData[{
 Cell[8027, 251, 419, 12, 70, "MoreAboutSection",
  CellID->38303248],
 Cell[8449, 265, 156, 3, 70, "MoreAbout",
- CellID->310220068]
+ CellID->395072627]
 }, Open  ]],
 Cell[8620, 271, 23, 0, 70, "FooterCell"]
 }

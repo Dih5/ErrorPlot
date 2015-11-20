@@ -1,24 +1,5 @@
-(*  ErrorPlot Package: ListPlot with error bars in Mathematica
-    Copyright (C) 2014-2015  Guillermo Hernandez
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*)
-
-(* Created by the Wolfram Workbench 19-jun-2014 *)
-
 BeginPackage["ErrorPlot`"]
-(* Exported symbols added here with SymbolName::usage *) 
+
 ErrorPlot::usage="ErrorPlot[{pt1, pt2, ...}] plots the data of a List of points, optionally including error bars. Each point is a List of numerical values whose meaning is the defined by option DataFormat.
 ErrorPlot[{list1, list2,...}] plots several data series";
 ErrorLogPlot::usage="ErrorLogPlot[{pt1, pt2, ...}] makes a log plot of the data of a List of points, optionally including error bars. Each point is a List of numerical values whose meaning is the defined by option DataFormat.
@@ -45,12 +26,9 @@ specifies the style in which horizontal error bars are plotted."
 PlotErrorBars::usage="PlotErrorBars is an option for error-plotting that \
 specifies whether markers and error bars (in each axis) are plotted."
 
-getXF::usage="TODO"
-getYF::usage="TODO"
-
 
 Begin["`Private`"]
-(* Implementation of the package *)
+(* Note some private functions are intentionally described here *)
 PatternMatchQ[pattern_, format_] :=
     Position[Map[StringMatchQ[#, pattern, IgnoreCase -> True] &, format],
       True]
@@ -231,10 +209,19 @@ EnsurePair=If[Head[#]===List,#,{#,#}]&;
 AutoPad=PadRight[#1,#2,#1]&;
 
 (*Only for M10*)
+
 GetDefaultPlotStyle[theme_]:=Select[Select[
     Charting`ResolvePlotTheme[theme, 
      ListPlot], #[[1]] === Method &][[1, 2]], #[[1]] == 
     "DefaultPlotStyle" &][[1, 2]]
+    
+(*Get always as a List (possibly empty) *)
+GetBaseStyle[theme_]:=If[(BaseStyle /. 
+     Select[Charting`ResolvePlotTheme[theme, 
+       ListPlot], #[[1]] === BaseStyle &]) === BaseStyle, {}, 
+  EnsureList[
+   Select[Charting`ResolvePlotTheme[theme, 
+      ListPlot], #[[1]] === BaseStyle &][[1, 2]]]]
 
 
 (*Options that are new to ErrorPlot*)
@@ -273,7 +260,7 @@ ErrorLogLinearPlot[data_,opts : OptionsPattern[]]:=ErrorGeneralPlot[data,ListLog
 ErrorLogLogPlot[data_,opts : OptionsPattern[]]:=ErrorGeneralPlot[data,ListLogLogPlot,ScaleLogLog,opts];
 
 
-(*TODO: Base Style should be used to style error bars and thicks*)
+
 ErrorGeneralPlot[data_, plotFunction_,scaleFunction_,opts : OptionsPattern[]] :=
     Module[ {l,data2, canData, dataFormat,plotErrorBars,drawVerticalBars, drawHorizontalBars, barTickX, 
       barTickY, tickSize,errorBarTickStyle,horizontalBarStyle,verticalBarStyle,PointMarkerTable,defaultPlotStyle},
@@ -322,8 +309,10 @@ ErrorGeneralPlot[data_, plotFunction_,scaleFunction_,opts : OptionsPattern[]] :=
             
         (*M10's themes*)
         defaultPlotStyle=If[$VersionNumber<=9.,ColorData[1, "ColorList"],
-        	If[OptionValue[PlotTheme]===Automatic,GetDefaultPlotStyle[$PlotTheme],GetDefaultPlotStyle[OptionValue[PlotTheme]]]
+        	GetDefaultPlotStyle[If[OptionValue[PlotTheme]===Automatic,$PlotTheme,OptionValue[PlotTheme]]]
           ];
+        (*Override adding the BaseStyle*)
+        If[$VersionNumber>=10.,defaultPlotStyle=Join[#, Directive @@ DeleteCases[GetBaseStyle[If[OptionValue[PlotTheme]===Automatic,$PlotTheme,OptionValue[PlotTheme]]],Automatic]]&/@ defaultPlotStyle];
         (*Other defaults*)
         errorBarTickStyle=AutoPad[If[OptionValue[ErrorBarTickStyle]===Automatic,defaultPlotStyle,EnsureList[OptionValue[ErrorBarTickStyle]]],l];
         PointMarkerTable = AutoPad[EnsureList[If[OptionValue[PointMarkers]===Automatic,AutoPointMarkers,OptionValue[PointMarkers]]],l];
@@ -386,8 +375,7 @@ ErrorGeneralPlot[data_, plotFunction_,scaleFunction_,opts : OptionsPattern[]] :=
 
 
 End[]
-(*Display a message when the package is loaded*)
-Print["ErrorPlot 0.2\nSend suggestions, questions or bugs to guillehg@usal.es"]
+
 
 EndPackage[]
 

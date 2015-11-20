@@ -1,0 +1,27 @@
+<pre name='i_11_in' id='i_11_in' class='IFT'>Graphics[{Red, Text[Style[&quot;1&quot;, Large, Bold], {0, 0}], 
+  Text[Style[&quot;2&quot;, Large, Bold], {0, 1}], 
+  Text[Style[&quot;3&quot;, Large, Bold], {0, -1}], 
+  Text[Style[&quot;4&quot;, Large, Bold], {-1, 0}], 
+  Text[Style[&quot;5&quot;, Large, Bold], {1, 0}], Black, Arrowheads[0.07], 
+  Arrow[BezierCurve[{{0, 0}, {-0.1, 1}, {0, 1}}]], 
+  Arrow[BezierCurve[{{0, 1}, {0.1, 1}, {0, -1}}]],
+  Arrow[{{0, -1}, {-1, 0}}], Arrow[{{-1, 0}, {1, 0}}]}]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0xurrd21twd6lha9pmpca74353yp7kt16s-f63n28</String>
+  </Function>
+ </Function>
+</Expression>

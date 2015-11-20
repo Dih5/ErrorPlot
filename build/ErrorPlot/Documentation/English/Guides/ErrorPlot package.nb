@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4522,        149]
+NotebookDataLength[      4521,        149]
 NotebookOptionsPosition[      2695,         98]
-NotebookOutlinePosition[      4033,        131]
-CellTagsIndexPosition[      3990,        128]
+NotebookOutlinePosition[      4032,        131]
+CellTagsIndexPosition[      3989,        128]
 WindowTitle->ErrorPlot package - Wolfram Mathematica
 WindowFrame->Normal*)
 
@@ -104,7 +104,7 @@ WindowTitle->"ErrorPlot package - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 30.4301496}", "context" -> "ErrorPlot`", 
+   "built" -> "{2015, 11, 20, 10, 56, 9.5182872}", "context" -> "ErrorPlot`", 
     "keywords" -> {}, "index" -> True, "label" -> "Error Plot Guide", 
     "language" -> "en", "paclet" -> "ErrorPlot", "status" -> "None", 
     "summary" -> 
@@ -115,7 +115,7 @@ functionality to plot error bars with great flexibility on the format of \
 provided data.", "synonyms" -> {}, "title" -> "ErrorPlot package", "type" -> 
     "Guide", "uri" -> "ErrorPlot/guide/Plotting data with error bars"}, 
   "LinkTrails" -> "", "SearchTextTranslated" -> ""},
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "WindowsANSI"]
 ]

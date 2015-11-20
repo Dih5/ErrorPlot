@@ -1,0 +1,25 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>data = Table[{x, x + 1, Integrate[t^2, {t, x, x + 1}], 
+    2*Sqrt[Integrate[t^4, {t, x, x + 1}] - 
+       Integrate[t^2, {t, x, x + 1}]^2]}, {x, 1, 20, 5}];
+TableForm[data, 
+ TableHeadings -&gt; {None, {&quot;\!\(\*SubscriptBox[\(x\), \(min\)]\)&quot;, 
+    &quot;\!\(\*SubscriptBox[\(x\), \(max\)]\)&quot;, &quot;y&quot;, &quot;&#948;y&quot;}}]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0xurrd21twd6lha9pmpca74353yp7kt16s-8bxqkz</String>
+  </Function>
+ </Function>
+</Expression>

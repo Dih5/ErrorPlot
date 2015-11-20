@@ -1,0 +1,25 @@
+<pre name='i_17_in' id='i_17_in' class='IFT'>Table[ErrorPlot[
+  Table[{x, x + 1, Integrate[t^2, {t, x, x + 1}], 
+    2*Sqrt[Integrate[t^4, {t, x, x + 1}] - 
+       Integrate[t^2, {t, x, x + 1}]^2]}, {x, 1, 20, 5}], 
+  PlotErrorBars -&gt; s], {s, {True, {True, False}, {False, True}, 
+   False}}]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0n3cz275kem6mea-4r2g4</String>
+  </Function>
+ </Function>
+</Expression>

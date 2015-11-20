@@ -1,0 +1,32 @@
+<pre name='i_1_in' id='i_1_in' class='IFT'>Needs[&quot;ErrorPlot`&quot;];
+data = Table[{x, x + 1, Integrate[t^2, {t, x, x + 1}], 
+    2*Sqrt[Integrate[t^4, {t, x, x + 1}] - 
+       Integrate[t^2, {t, x, x + 1}]^2]}, {x, 1, 20, 5}];
+fullData = 
+  Table[{i[[1]], 
+    i[[2]], (i[[2]] + i[[1]])/2, (i[[2]] - i[[1]])/
+     2, (i[[2]] - i[[1]])/(i[[2]] + i[[1]]), i[[3]], i[[4]]}, {i, 
+    data}];
+TableForm[fullData, 
+ TableHeadings -&gt; {None, {&quot;\!\(\*SubscriptBox[\(x\), \(min\)]\)&quot;, 
+    &quot;\!\(\*SubscriptBox[\(x\), \(max\)]\)&quot;, &quot;x&quot;, &quot;dx&quot;, &quot;relx&quot;, &quot;y&quot;, 
+    &quot;&#948;y&quot;}}]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0g6tm6q7xchxnzm-fkf3ug</String>
+  </Function>
+ </Function>
+</Expression>

@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     65873,       1852]
+NotebookDataLength[     65872,       1852]
 NotebookOptionsPosition[     60419,       1669]
-NotebookOutlinePosition[     62237,       1718]
-CellTagsIndexPosition[     62194,       1715]
+NotebookOutlinePosition[     62236,       1718]
+CellTagsIndexPosition[     62193,       1715]
 WindowTitle->Plotting data with error bars - Wolfram Mathematica
 WindowFrame->Normal*)
 
@@ -518,7 +518,7 @@ JL6/kbSfMnYUAAAAAAAA3Ob/LKi28A==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->847691279]
+ CellID->164696035]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -769,7 +769,7 @@ P/skxinDL1ZBBmuXiUfCCIHnNzLHKeJAAQAAAAAAAABUjf8Dtn2+lA==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[7]=",
- CellID->529702017]
+ CellID->248092729]
 }, Open  ]],
 
 Cell["\<\
@@ -1675,8 +1675,8 @@ WindowTitle->"Plotting data with error bars - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 48.5605138}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> "Error Plot Tutorial", 
+   "built" -> "{2015, 11, 20, 10, 56, 25.4386275}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> "Error Plot Tutorial", 
     "language" -> "en", "paclet" -> "ErrorPlot", "status" -> "None", 
     "summary" -> 
     "The ErrorPlot package allows for plotting data with errors in a flexible \
@@ -1685,7 +1685,7 @@ package:", "synonyms" -> {}, "title" -> "Plotting data with error bars",
     "type" -> "Tutorial", "uri" -> 
     "ErrorPlot/tutorial/Plotting data with error bars"}, "LinkTrails" -> "", 
   "SearchTextTranslated" -> ""},
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -1703,8 +1703,8 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -1758,7 +1758,7 @@ Cell[CellGroupData[{
 Cell[14478, 436, 283, 9, 28, "Input",
  CellID->136376016],
 Cell[14764, 447, 4001, 73, 173, "Output",
- CellID->847691279]
+ CellID->164696035]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[18802, 525, 71, 1, 70, "Section",
@@ -1777,7 +1777,7 @@ Cell[CellGroupData[{
 Cell[23194, 666, 980, 28, 83, "Input",
  CellID->128217438],
 Cell[24177, 696, 4147, 75, 173, "Output",
- CellID->529702017]
+ CellID->248092729]
 }, Open  ]],
 Cell[28339, 774, 110, 3, 70, "Text",
  CellID->561728014],

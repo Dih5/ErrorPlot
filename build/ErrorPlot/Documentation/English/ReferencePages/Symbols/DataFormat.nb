@@ -3,7 +3,7 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
@@ -11,9 +11,9 @@ NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
 NotebookDataLength[     26996,        757]
-NotebookOptionsPosition[     23569,        646]
-NotebookOutlinePosition[     25185,        692]
-CellTagsIndexPosition[     25100,        687]
+NotebookOptionsPosition[     23570,        646]
+NotebookOutlinePosition[     25184,        692]
+CellTagsIndexPosition[     25099,        687]
 WindowTitle->DataFormat - Wolfram Mathematica
 WindowFrame->Normal*)
 
@@ -109,7 +109,7 @@ Cell[TextData[Cell[BoxData[
   Evaluator->None,
   Method->"Preemptive"]]]], "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->53321130],
+ CellID->472750421],
 
 Cell[TextData[{
  "DataFormat must be a ",
@@ -203,7 +203,7 @@ Cell[TextData[ButtonBox["EXAMPLES",
      FrontEnd`SelectedNotebook[], After, 
      CellContents]}]& )]], "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->647399537],
+ CellID->30932483],
 
 Cell[CellGroupData[{
 
@@ -212,7 +212,7 @@ Cell[TextData[{
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection",
- CellID->626321198],
+ CellID->107415552],
 
 Cell["\<\
 We load the package and prepare some data (see the tutorial for more \
@@ -477,7 +477,7 @@ O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->176480858]
+ CellID->241077729]
 }, Open  ]],
 
 Cell["X-coordinates as a ball", "ExampleText",
@@ -557,7 +557,7 @@ O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->304461605]
+ CellID->139012169]
 }, Open  ]],
 
 Cell["X-coordinates as a ball of relative radious", "ExampleText",
@@ -637,7 +637,7 @@ O8L34bt2fWPDyjtTewAAAACA5f4HSUytKA==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->53183213]
+ CellID->301333704]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -652,8 +652,8 @@ WindowTitle->"DataFormat - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 32.0162041}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> 
+   "built" -> "{2015, 11, 20, 10, 56, 10.9394446}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> 
     "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
     "ErrorPlot Package", "status" -> "None", "summary" -> 
     "DataFormat is an option for error-plotting that specifies the meaning of \
@@ -661,7 +661,7 @@ each data point coordinate.", "synonyms" -> {}, "title" -> "DataFormat",
     "type" -> "Symbol", "uri" -> "ErrorPlot/ref/DataFormat"}, "LinkTrails" -> 
   "", "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -670,8 +670,8 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -679,9 +679,9 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[6715, 192, 461, 13, 70, "PrimaryExamplesSection",
+  Cell[6716, 192, 460, 13, 70, "PrimaryExamplesSection",
    CellTags->"PrimaryExamplesSection",
-   CellID->647399537]}
+   CellID->30932483]}
  }
 *)
 (*CellTagsIndex
@@ -700,30 +700,30 @@ Cell[2752, 75, 53, 1, 70, "ObjectName",
 Cell[CellGroupData[{
 Cell[2830, 80, 374, 10, 70, "Usage"],
 Cell[CellGroupData[{
-Cell[3229, 94, 579, 17, 70, "NotesSection",
+Cell[3229, 94, 580, 17, 70, "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->53321130],
-Cell[3811, 113, 465, 16, 70, "Notes",
+ CellID->472750421],
+Cell[3812, 113, 465, 16, 70, "Notes",
  CellID->1067943069],
-Cell[4279, 131, 95, 1, 70, "Notes",
+Cell[4280, 131, 95, 1, 70, "Notes",
  CellID->16590170],
-Cell[4377, 134, 1124, 22, 70, "2ColumnTableMod",
+Cell[4378, 134, 1124, 22, 70, "2ColumnTableMod",
  CellID->234732565],
-Cell[5504, 158, 109, 3, 70, "Notes",
+Cell[5505, 158, 109, 3, 70, "Notes",
  CellID->165248366],
-Cell[5616, 163, 140, 4, 70, "Notes",
+Cell[5617, 163, 140, 4, 70, "Notes",
  CellID->232576562],
-Cell[5759, 169, 907, 17, 70, "2ColumnTableMod",
+Cell[5760, 169, 907, 17, 70, "2ColumnTableMod",
  CellID->138769078]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6715, 192, 461, 13, 70, "PrimaryExamplesSection",
+Cell[6716, 192, 460, 13, 70, "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->647399537],
+ CellID->30932483],
 Cell[CellGroupData[{
 Cell[7201, 209, 148, 5, 70, "ExampleSection",
- CellID->626321198],
+ CellID->107415552],
 Cell[7352, 216, 176, 4, 70, "ExampleText",
  CellID->25537377],
 Cell[CellGroupData[{
@@ -738,7 +738,7 @@ Cell[CellGroupData[{
 Cell[13211, 407, 508, 16, 47, "Input",
  CellID->566671650],
 Cell[13722, 425, 2846, 54, 173, "Output",
- CellID->176480858]
+ CellID->241077729]
 }, Open  ]],
 Cell[16583, 482, 66, 1, 70, "ExampleText",
  CellID->180196045],
@@ -746,19 +746,19 @@ Cell[CellGroupData[{
 Cell[16674, 487, 502, 16, 47, "Input",
  CellID->181432386],
 Cell[17179, 505, 2846, 54, 173, "Output",
- CellID->304461605]
+ CellID->139012169]
 }, Open  ]],
 Cell[20040, 562, 86, 1, 70, "ExampleText",
  CellID->280718715],
 Cell[CellGroupData[{
 Cell[20151, 567, 504, 16, 47, "Input",
  CellID->509461540],
-Cell[20658, 585, 2845, 54, 173, "Output",
- CellID->53183213]
+Cell[20658, 585, 2846, 54, 173, "Output",
+ CellID->301333704]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[23542, 644, 23, 0, 70, "FooterCell"]
+Cell[23543, 644, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

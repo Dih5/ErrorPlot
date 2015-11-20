@@ -3,15 +3,15 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10043,        311]
-NotebookOptionsPosition[      7654,        241]
+NotebookDataLength[     10044,        311]
+NotebookOptionsPosition[      7655,        241]
 NotebookOutlinePosition[      9280,        283]
 CellTagsIndexPosition[      9237,        280]
 WindowTitle->ErrorLogLogPlot - Wolfram Mathematica
@@ -159,7 +159,7 @@ Cell[TextData[Cell[BoxData[
   Evaluator->None,
   Method->"Preemptive"]]]], "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->26996033],
+ CellID->490505253],
 
 Cell[TextData[{
  "To use ",
@@ -247,8 +247,8 @@ WindowTitle->"ErrorLogLogPlot - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 37.8352892}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> 
+   "built" -> "{2015, 11, 20, 10, 56, 15.9718495}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> 
     "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
     "ErrorPlot Package", "status" -> "None", "summary" -> 
     "ErrorLogLogPlot[{pt_1, pt_2, ...}] makes a log-log plot of the data of a \
@@ -259,7 +259,7 @@ ErrorLogLogPlot[{list_1, list_2, ...}] plots several data series",
     "ErrorPlot/ref/ErrorLogLogPlot"}, "LinkTrails" -> "", 
   "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -268,8 +268,8 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -291,28 +291,28 @@ Cell[3499, 93, 58, 1, 70, "ObjectName",
 Cell[CellGroupData[{
 Cell[3582, 98, 1465, 42, 70, "Usage"],
 Cell[CellGroupData[{
-Cell[5072, 144, 579, 17, 70, "NotesSection",
+Cell[5072, 144, 580, 17, 70, "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->26996033],
-Cell[5654, 163, 317, 11, 70, "Notes",
+ CellID->490505253],
+Cell[5655, 163, 317, 11, 70, "Notes",
  CellID->529477546],
-Cell[5974, 176, 302, 9, 70, "Notes",
+Cell[5975, 176, 302, 9, 70, "Notes",
  CellID->13171136]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6325, 191, 417, 12, 70, "SeeAlsoSection",
+Cell[6326, 191, 417, 12, 70, "SeeAlsoSection",
  CellID->1255426704],
-Cell[6745, 205, 212, 6, 70, "SeeAlso",
+Cell[6746, 205, 212, 6, 70, "SeeAlso",
  CellID->929782353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6994, 216, 419, 12, 70, "TutorialsSection",
+Cell[6995, 216, 419, 12, 70, "TutorialsSection",
  CellID->250839057],
-Cell[7416, 230, 196, 6, 70, "Tutorials",
+Cell[7417, 230, 196, 6, 70, "Tutorials",
  CellID->341631938]
 }, Open  ]],
-Cell[7627, 239, 23, 0, 70, "FooterCell"]
+Cell[7628, 239, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

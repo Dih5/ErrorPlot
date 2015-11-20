@@ -1,0 +1,28 @@
+<pre name='i_21_in' id='i_21_in' class='IFT'>fullData = 
+  Table[{i[[1]], 
+    i[[2]], (i[[2]] + i[[1]])/2, (i[[2]] - i[[1]])/
+     2, (i[[2]] - i[[1]])/(i[[2]] + i[[1]]), i[[3]], i[[4]]}, {i, 
+    data}];
+TableForm[fullData, 
+ TableHeadings -&gt; {None, {&quot;\!\(\*SubscriptBox[\(x\), \(min\)]\)&quot;, 
+    &quot;\!\(\*SubscriptBox[\(x\), \(max\)]\)&quot;, &quot;x&quot;, &quot;dx&quot;, &quot;relx&quot;, &quot;y&quot;, 
+    &quot;&#948;y&quot;}}]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0xurrd21twd6lha9pmpca74353yp7kt16s-co8nze</String>
+  </Function>
+ </Function>
+</Expression>

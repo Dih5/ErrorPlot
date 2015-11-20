@@ -1,0 +1,22 @@
+<pre name='i_3_in' id='i_3_in' class='IFT'>ErrorPlot[{{1, 2, 0.7, 1.9, 1.6, 2.9}, {2, 4, 1.8, 3.1, 3.6, 5}}, 
+ DataFormat -&gt; {&quot;x&quot;, &quot;y&quot;, &quot;xMin&quot;, &quot;xMax&quot;, &quot;yMin&quot;, &quot;yMax&quot;}, 
+ PlotErrorBars -&gt; True]</pre><?xml version='1.0'?>
+<!DOCTYPE Expression SYSTEM 'http://www.wolfram.com/XML/notebookml1.dtd'>
+<Expression xmlns:mathematica='http://www.wolfram.com/XML/'
+    xmlns='http://www.wolfram.com/XML/'>
+ <Function>
+  <Symbol>Div</Symbol>
+  <Function>
+   <Symbol>List</Symbol>
+   <Function>
+    <Symbol>Rule</Symbol>
+    <String>class</String>
+    <String>IFU</String>
+   </Function>
+  </Function>
+  <Function>
+   <Symbol>List</Symbol>
+   <String>http://wolfram.com/xid/0n3cz275kem6mea-6ckbt</String>
+  </Function>
+ </Function>
+</Expression>

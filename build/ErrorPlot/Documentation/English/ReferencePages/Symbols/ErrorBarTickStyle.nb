@@ -3,15 +3,15 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25089,        720]
-NotebookOptionsPosition[     21618,        608]
+NotebookDataLength[     25090,        720]
+NotebookOptionsPosition[     21619,        608]
 NotebookOutlinePosition[     23303,        655]
 CellTagsIndexPosition[     23218,        650]
 WindowTitle->ErrorBarTickStyle - Wolfram Mathematica
@@ -128,7 +128,7 @@ Cell[TextData[Cell[BoxData[
   Evaluator->None,
   Method->"Preemptive"]]]], "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->4312608],
+ CellID->139333102],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -196,7 +196,7 @@ Cell[TextData[ButtonBox["EXAMPLES",
      FrontEnd`SelectedNotebook[], After, 
      CellContents]}]& )]], "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->15289989],
+ CellID->44586224],
 
 Cell[CellGroupData[{
 
@@ -205,7 +205,7 @@ Cell[TextData[{
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection",
- CellID->617865480],
+ CellID->149984651],
 
 Cell["\<\
 First we must load the package (if it has not been already loaded).\
@@ -329,7 +329,7 @@ Bx/fi18=
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->17522752]
+ CellID->6164410]
 }, Open  ]],
 
 Cell["\<\
@@ -614,8 +614,8 @@ WindowTitle->"ErrorBarTickStyle - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 35.1032602}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> 
+   "built" -> "{2015, 11, 20, 10, 56, 13.6427130}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> 
     "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
     "ErrorPlot Package", "status" -> "None", "summary" -> 
     "ErrorBarTickStyle is an option for error-plotting that specifies the \
@@ -624,7 +624,7 @@ used.", "synonyms" -> {}, "title" -> "ErrorBarTickStyle", "type" -> "Symbol",
     "uri" -> "ErrorPlot/ref/ErrorBarTickStyle"}, "LinkTrails" -> "", 
   "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -633,8 +633,8 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -642,9 +642,9 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[5953, 185, 460, 13, 70, "PrimaryExamplesSection",
+  Cell[5955, 185, 460, 13, 70, "PrimaryExamplesSection",
    CellTags->"PrimaryExamplesSection",
-   CellID->15289989]}
+   CellID->44586224]}
  }
 *)
 (*CellTagsIndex
@@ -663,65 +663,65 @@ Cell[3499, 93, 60, 1, 70, "ObjectName",
 Cell[CellGroupData[{
 Cell[3584, 98, 430, 11, 70, "Usage"],
 Cell[CellGroupData[{
-Cell[4039, 113, 578, 17, 70, "NotesSection",
+Cell[4039, 113, 580, 17, 70, "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->4312608],
-Cell[4620, 132, 390, 12, 70, "Notes",
+ CellID->139333102],
+Cell[4622, 132, 390, 12, 70, "Notes",
  CellID->1067943069],
-Cell[5013, 146, 702, 24, 70, "Notes",
+Cell[5015, 146, 702, 24, 70, "Notes",
  CellID->386001160],
-Cell[5718, 172, 186, 7, 70, "Notes",
+Cell[5720, 172, 186, 7, 70, "Notes",
  CellID->190124565]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5953, 185, 460, 13, 70, "PrimaryExamplesSection",
+Cell[5955, 185, 460, 13, 70, "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->15289989],
+ CellID->44586224],
 Cell[CellGroupData[{
-Cell[6438, 202, 148, 5, 70, "ExampleSection",
- CellID->617865480],
-Cell[6589, 209, 118, 3, 70, "ExampleText",
+Cell[6440, 202, 148, 5, 70, "ExampleSection",
+ CellID->149984651],
+Cell[6591, 209, 118, 3, 70, "ExampleText",
  CellID->217517874],
-Cell[6710, 214, 118, 3, 70, "Input",
+Cell[6712, 214, 118, 3, 70, "Input",
  CellID->492803405],
-Cell[6831, 219, 64, 1, 70, "ExampleText",
+Cell[6833, 219, 64, 1, 70, "ExampleText",
  CellID->310397740],
 Cell[CellGroupData[{
-Cell[6920, 224, 1536, 44, 83, "Input",
+Cell[6922, 224, 1536, 44, 83, "Input",
  CellID->15117293],
-Cell[8459, 270, 3240, 61, 101, "Output",
- CellID->17522752]
+Cell[8461, 270, 3239, 61, 101, "Output",
+ CellID->6164410]
 }, Open  ]],
-Cell[11714, 334, 175, 4, 70, "ExampleText",
+Cell[11715, 334, 175, 4, 70, "ExampleText",
  CellID->2177926],
 Cell[CellGroupData[{
-Cell[11914, 342, 1198, 35, 70, "Input",
+Cell[11915, 342, 1198, 35, 70, "Input",
  CellID->733823048],
-Cell[13115, 379, 2855, 64, 173, "Output",
+Cell[13116, 379, 2855, 64, 173, "Output",
  CellID->94923396]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16007, 448, 1408, 41, 70, "Input",
+Cell[16008, 448, 1408, 41, 70, "Input",
  CellID->194187370],
-Cell[17418, 491, 2872, 64, 173, "Output",
+Cell[17419, 491, 2872, 64, 173, "Output",
  CellID->118854144]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20351, 562, 417, 12, 70, "SeeAlsoSection",
+Cell[20352, 562, 417, 12, 70, "SeeAlsoSection",
  CellID->1255426704],
-Cell[20771, 576, 160, 4, 70, "SeeAlso",
+Cell[20772, 576, 160, 4, 70, "SeeAlso",
  CellID->929782353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20968, 585, 419, 12, 70, "TutorialsSection",
+Cell[20969, 585, 419, 12, 70, "TutorialsSection",
  CellID->250839057],
-Cell[21390, 599, 186, 4, 70, "Tutorials",
+Cell[21391, 599, 186, 4, 70, "Tutorials",
  CellID->426026704]
 }, Open  ]],
-Cell[21591, 606, 23, 0, 70, "FooterCell"]
+Cell[21592, 606, 23, 0, 70, "FooterCell"]
 }
 ]
 *)

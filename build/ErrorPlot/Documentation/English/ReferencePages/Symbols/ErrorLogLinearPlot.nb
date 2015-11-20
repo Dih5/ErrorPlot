@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11293,        349]
-NotebookOptionsPosition[      8720,        273]
-NotebookOutlinePosition[     10364,        315]
-CellTagsIndexPosition[     10321,        312]
+NotebookDataLength[     11290,        349]
+NotebookOptionsPosition[      8719,        273]
+NotebookOutlinePosition[     10362,        315]
+CellTagsIndexPosition[     10319,        312]
 WindowTitle->ErrorLogLinearPlot - Wolfram Mathematica
 WindowFrame->Normal*)
 
@@ -169,7 +169,7 @@ Cell[TextData[Cell[BoxData[
   Evaluator->None,
   Method->"Preemptive"]]]], "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->152440378],
+ CellID->29953956],
 
 Cell[TextData[{
  "To use ",
@@ -266,7 +266,7 @@ Cell[TextData[ButtonBox["MORE ABOUT",
 Cell[TextData[ButtonBox["ErrorPlot package",
  BaseStyle->"Link",
  ButtonData->"paclet:ErrorPlot/guide/ErrorPlot package"]], "MoreAbout",
- CellID->66249873]
+ CellID->30860830]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
@@ -279,8 +279,8 @@ WindowTitle->"ErrorLogLinearPlot - Wolfram Mathematica",
 TaggingRules->{
  "ModificationHighlight" -> False, 
   "Metadata" -> {
-   "built" -> "{2015, 4, 22, 18, 57, 36.5872187}", "context" -> "ErrorPlot`", 
-    "keywords" -> {}, "index" -> True, "label" -> 
+   "built" -> "{2015, 11, 20, 10, 56, 14.8615268}", "context" -> "ErrorPlot`",
+     "keywords" -> {}, "index" -> True, "label" -> 
     "ErrorPlot Package Paclet Symbol", "language" -> "en", "paclet" -> 
     "ErrorPlot Package", "status" -> "None", "summary" -> 
     "ErrorLogLinearPlot[{pt_1, pt_2, ...}] makes a log-linear plot of the \
@@ -291,7 +291,7 @@ ErrorLogLinearPlot[{list_1, list_2, ...}] plots several data series",
     "uri" -> "ErrorPlot/ref/ErrorLogLinearPlot"}, "LinkTrails" -> "", 
   "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -300,8 +300,8 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
-   StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> "10.3 for Microsoft Windows (64-bit) (October 9, 2015)", 
+  StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -323,34 +323,34 @@ Cell[3929, 103, 61, 1, 70, "ObjectName",
 Cell[CellGroupData[{
 Cell[4015, 108, 1474, 42, 70, "Usage"],
 Cell[CellGroupData[{
-Cell[5514, 154, 580, 17, 70, "NotesSection",
+Cell[5514, 154, 579, 17, 70, "NotesSection",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->152440378],
-Cell[6097, 173, 320, 11, 70, "Notes",
+ CellID->29953956],
+Cell[6096, 173, 320, 11, 70, "Notes",
  CellID->529477546],
-Cell[6420, 186, 308, 9, 70, "Notes",
+Cell[6419, 186, 308, 9, 70, "Notes",
  CellID->13171136]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6777, 201, 417, 12, 70, "SeeAlsoSection",
+Cell[6776, 201, 417, 12, 70, "SeeAlsoSection",
  CellID->1255426704],
-Cell[7197, 215, 212, 6, 70, "SeeAlso",
+Cell[7196, 215, 212, 6, 70, "SeeAlso",
  CellID->929782353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7446, 226, 419, 12, 70, "TutorialsSection",
+Cell[7445, 226, 419, 12, 70, "TutorialsSection",
  CellID->250839057],
-Cell[7868, 240, 196, 6, 70, "Tutorials",
+Cell[7867, 240, 196, 6, 70, "Tutorials",
  CellID->341631938]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8101, 251, 419, 12, 70, "MoreAboutSection",
+Cell[8100, 251, 419, 12, 70, "MoreAboutSection",
  CellID->38303248],
-Cell[8523, 265, 155, 3, 70, "MoreAbout",
- CellID->66249873]
+Cell[8522, 265, 155, 3, 70, "MoreAbout",
+ CellID->30860830]
 }, Open  ]],
-Cell[8693, 271, 23, 0, 70, "FooterCell"]
+Cell[8692, 271, 23, 0, 70, "FooterCell"]
 }
 ]
 *)
