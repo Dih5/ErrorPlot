@@ -26,7 +26,7 @@ It allows for log-scale plotting and a freer syntax.
 The package provides a family of functions `ErrorPlot`, `ErrorLogPlot`, `ErrorLogLinearPlot`, and `ErrorLogLogPlot` which extend the functionality of the ListPlot family to plot data with error bars.
 ## Usage example
 
-A brief overlook:
+A brief overview:
 
 ![alt tag](https://raw.github.com/dih5/ErrorPlot/master/demo.png)
 
@@ -42,7 +42,7 @@ To install the ErrorPlot package evaluate:
 Get["https://raw.githubusercontent.com/dih5/ErrorPlot/master/BootstrapInstall.m"]
 ```
 
-This method uses [MathematicaBootstrapInstaller](https://github.com/jkuczm/MathematicaBootstrapInstaller) and will also install
+This method uses [MathematicaBootstrapInstaller](https://github.com/jkuczm/MathematicaBootstrapInstaller) and will also install the
 [ProjectInstaller](https://github.com/lshifr/ProjectInstaller) package if you don't have it already installed.
 
 To load the ErrorPlot package evaluate: ``Needs["ErrorPlot`"]``.
