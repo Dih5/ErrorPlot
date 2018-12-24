@@ -1,9 +1,8 @@
 # ErrorPlot
 
 [![release v1.0.0](http://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/dih5/ErrorPlot/releases/latest)
-[![Semantic Versioning](https://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 [![license MIT](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/dih5/ErrorPlot/blob/master/LICENSE.txt)
-[![Mathematica 9.0 10.0](https://img.shields.io/badge/Mathematica-9.0_10.0-brightgreen.svg)](#compatibility)
+[![Mathematica 9-11](https://img.shields.io/badge/Mathematica-9--11-brightgreen.svg)](#compatibility)
 
 
 An alternative to the ErrorBar Plotting Package included in Mathematica.
@@ -17,7 +16,6 @@ It allows for log-scale plotting and a freer syntax.
     * [No installation](#no-installation)
 * [Documentation](#documentation)
 * [Compatibility](#compatibility)
-* [Bugs and requests](#bugs-and-requests)
 * [Contributing](#contributing)
 * [License](#license)
 * [Versioning](#versioning)
@@ -83,19 +81,15 @@ or press `F1` key with cursor on name of any of symbols introduced by this appli
 
 ## Compatibility
 
-The package has been tested with Mathematica version 9.0 and 10.3 on Windows and Linux.
+The package has been tested with Mathematica versions from 9.0 to 11.3 on Windows and Linux.
 It will probably work in Mathematica 6.0+, but it has not been tested. If you do so, please let me know.
 
 
 
-## Bugs and requests
+## Contributing
 
 If you find any bugs or have a feature request you may create an
 [issue on GitHub](https://github.com/dih5/ErrorPlot/issues).
-
-
-
-## Contributing
 
 Feel free to fork and send pull requests, all contributions are welcome.
 
