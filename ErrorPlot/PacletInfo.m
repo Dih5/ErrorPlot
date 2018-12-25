@@ -11,6 +11,10 @@ Paclet[
     URL->"https://github.com/Dih5/ErrorPlot",
     Extensions ->
         {
+            {"Kernel",
+              "Context"->{"ErrorPlot`"}
+              "Root"->"."
+            },
             {"Documentation", Resources ->
                 {"Guides/Plotting data with error bars"}
             , Language -> "English"},
