@@ -14,9 +14,10 @@ Paclet[
             {"Documentation", Resources ->
                 {"Guides/Plotting data with error bars"}
             , Language -> "English"},
-            {
-              "Kernel",
-                "Root"->"ErrorPlot"
+            {"PacletServer",
+              "License"->"MIT",
+           		"Tags" -> {"plots"},
+           		"Categories" -> {"Plotting"}
             }
         }
 ]
