@@ -12,7 +12,7 @@ Paclet[
     Extensions ->
         {
             {"Kernel",
-              "Context"->{"ErrorPlot`"}
+              "Context"->{"ErrorPlot`"},
               "Root"->"."
             },
             {"Documentation", Resources ->
