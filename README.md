@@ -11,9 +11,6 @@ It allows for log-scale plotting and a freer syntax.
 * [Features](#features)
 * [Usage example](#usage-example)
 * [Installation](#installation)
-    * [Automatic installation](#automatic-installation)
-    * [Manual installation](#manual-installation)
-    * [No installation](#no-installation)
 * [Documentation](#documentation)
 * [Compatibility](#compatibility)
 * [Contributing](#contributing)
@@ -32,6 +29,7 @@ This simple example is easy to generalize as if working with ListPlot. Some new 
 
 ## Installation
 
+There are various installation methods available.
 
 ### Automatic installation
 
@@ -68,6 +66,11 @@ Get["https://raw.githubusercontent.com/dih5/ErrorPlot/master/ErrorPlot/ErrorPlot
 
 Note that with this method of initialization
 package documentation will not be available in Mathematica Documentation Center.
+
+
+### Paclet server
+
+The package is also available from this [Mathematica Paclet Server](https://paclets.github.io/PacletServer/). Check the automated installation instructions [here](https://paclets.github.io/PacletServer/errorplot.html#main-content).
 
 
 ## Documentation
